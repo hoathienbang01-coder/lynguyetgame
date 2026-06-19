@@ -2,7 +2,7 @@ const story = [
     {
         speaker: "",
         text: "Sa mạc phương nam trải dài đến tận chân trời. Đoàn thương buôn lặng lẽ tiến về Ai Cập dưới ánh mặt trời rực cháy.",
-        background: "assets/backgrounds/desert.jpg",
+        background: "assets/backgrounds/desert.jpg", // Đã chuẩn hóa thư mục backgrounds
         character: ""
     },
     {
@@ -21,7 +21,7 @@ const story = [
         speaker: "Salynya",
         text: "Xin chào. Trông anh có vẻ không phải người của vương quốc này.",
         background: "assets/backgrounds/market.jpg",
-        character: "assets/character/salynya.png" // Đã sửa: bỏ chữ s ở chữ characters cho khớp thư mục
+        character: "assets/characters/salynya.png" // Đã sửa thành characters có s cho khớp ý hai!
     },
     {
         speaker: "Learian",
@@ -33,6 +33,6 @@ const story = [
         speaker: "Salynya",
         text: "Vậy thì chào mừng đến với thành phố dưới ánh trăng.",
         background: "assets/backgrounds/market.jpg",
-        character: "assets/character/salynya.png" // Đã sửa: bỏ chữ s ở chữ characters cho khớp thư mục
+        character: "assets/characters/salynya.png" // Đã sửa thành characters có s cho khớp ý hai!
     }
 ];
