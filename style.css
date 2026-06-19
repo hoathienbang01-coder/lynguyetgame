@@ -10,10 +10,11 @@ body {
     background: black;
 }
 
+/* Khung game - ĐÂY LÀ ĐIỂM MẤU CHỐT BẮT BUỘC PHẢI CÓ */
 #game {
     width: 100vw;
     height: 100vh;
-    position: relative;
+    position: relative; /* Giữ cố định làm tâm cho textbox và nút bám vào */
 }
 
 #background {
@@ -31,28 +32,28 @@ body {
 #character {
     position: absolute;
     left: 50%;
-    bottom: 0;                  /* Đứng sát đáy màn hình */
+    bottom: 0;                  /* Chân chạm sát đáy màn hình */
     transform: translateX(-50%);
     
-    height: 100vh;              /* Cao full màn hình */
+    height: 100vh;              /* Nhân vật to lớn full màn hình */
     width: auto;                
-    object-fit: cover;          /* Phóng to lấp đầy hai bên */
+    object-fit: cover;          /* Ép ảnh ngang phóng to tự lấp đầy */
     
     z-index: 5;
-    display: none;              /* game.js tự điều khiển hiện/ẩn */
+    display: none;              /* Mặc định ẩn, game.js sẽ tự bật khi Salynya nói */
 }
 
 #textbox {
     position: absolute;
     bottom: 0;
-    left: 0;                    /* Bổ sung để khóa chặt hộp thoại ở góc dưới bên trái */
+    left: 0;
     width: 100%;
     height: 240px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(30, 30, 30, 0.85); /* Tăng độ đậm màu xám/đen để không bị lẫn vào nền */
     backdrop-filter: blur(5px);
     color: white;
-    padding: 25px;
-    z-index: 10;                /* Luôn đè lên trên nhân vật và nền */
+    padding: 25px 60px;         /* Tạo khoảng cách lề thoáng đãng */
+    z-index: 10;                /* Luôn luôn đè lên trên nhân vật và hình nền */
 }
 
 #speaker {
@@ -67,21 +68,24 @@ body {
     line-height: 1.8;
 }
 
-/* Khóa chặt nút bấm ở góc phải bên trong hộp thoại, không sợ bị đẩy lung tung */
+/* Định vị nút tiếp tục ghim chặt vào góc phải của hộp thoại */
 #nextBtn {
     position: absolute;         
-    right: 50px;
+    right: 40px;
     bottom: 30px;
-    padding: 12px 25px;
-    border: none;
-    background: #FFD369;        /* Đổi màu nền nút cho nổi bật dễ bấm */
+    padding: 12px 30px;
+    border: 1px solid #FFD369;
+    background: #FFD369;
     color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 4px;
+    z-index: 11;
 }
 
 #nextBtn:hover {
     background: white;
+    color: black;
+    border-color: white;
 }
