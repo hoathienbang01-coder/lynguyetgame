@@ -10,11 +10,10 @@ body {
     background: black;
 }
 
-/* Khung game - ĐÂY LÀ ĐIỂM MẤU CHỐT BẮT BUỘC PHẢI CÓ */
 #game {
     width: 100vw;
     height: 100vh;
-    position: relative; /* Giữ cố định làm tâm cho textbox và nút bám vào */
+    position: relative; /* Bắt buộc có để làm tâm cố định */
 }
 
 #background {
@@ -32,15 +31,12 @@ body {
 #character {
     position: absolute;
     left: 50%;
-    bottom: 0;                  /* Chân chạm sát đáy màn hình */
+    bottom: 120px; /* Trả về đúng vị trí gốc của hai */
     transform: translateX(-50%);
-    
-    height: 100vh;              /* Nhân vật to lớn full màn hình */
-    width: auto;                
-    object-fit: cover;          /* Ép ảnh ngang phóng to tự lấp đầy */
-    
+    height: 80vh; /* Trả về đúng chiều cao gốc của hai */
+    object-fit: contain;
     z-index: 5;
-    display: none;              /* Mặc định ẩn, game.js sẽ tự bật khi Salynya nói */
+    display: none;
 }
 
 #textbox {
@@ -48,12 +44,12 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 240px;
-    background: rgba(30, 30, 30, 0.85); /* Tăng độ đậm màu xám/đen để không bị lẫn vào nền */
+    height: 240px; /* Cố định chiều cao để hiện chữ */
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(5px);
     color: white;
-    padding: 25px 60px;         /* Tạo khoảng cách lề thoáng đãng */
-    z-index: 10;                /* Luôn luôn đè lên trên nhân vật và hình nền */
+    padding: 25px;
+    z-index: 10;
 }
 
 #speaker {
@@ -68,14 +64,14 @@ body {
     line-height: 1.8;
 }
 
-/* Định vị nút tiếp tục ghim chặt vào góc phải của hộp thoại */
+/* ĐÃ SỬA: Giữ nút gốc của hai nhưng ghim chặt sang bên phải hộp thoại */
 #nextBtn {
-    position: absolute;         
-    right: 40px;
+    position: absolute;
+    right: 50px;
     bottom: 30px;
-    padding: 12px 30px;
-    border: 1px solid #FFD369;
-    background: #FFD369;
+    padding: 12px 25px;
+    border: none;
+    background: #FFD369; /* Giữ màu vàng nổi bật */
     color: black;
     cursor: pointer;
     font-size: 18px;
@@ -86,6 +82,4 @@ body {
 
 #nextBtn:hover {
     background: white;
-    color: black;
-    border-color: white;
 }
