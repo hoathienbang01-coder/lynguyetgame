@@ -21,7 +21,7 @@ const story = [
         speaker: "Salynya",
         text: "Xin chào. Trông anh có vẻ không phải người của vương quốc này.",
         background: "assets/backgrounds/market.jpg",
-        character: "assets/characters/salynya.png" // Đã sửa thành characters có s cho khớp ý hai!
+        character: "assets/characters/salynya.jpg" //
     },
     {
         speaker: "Learian",
@@ -33,6 +33,6 @@ const story = [
         speaker: "Salynya",
         text: "Vậy thì chào mừng đến với thành phố dưới ánh trăng.",
         background: "assets/backgrounds/market.jpg",
-        character: "assets/characters/salynya.png" // Đã sửa thành characters có s cho khớp ý hai!
+        character: "assets/characters/salynya.jpg" // 
     }
 ];
