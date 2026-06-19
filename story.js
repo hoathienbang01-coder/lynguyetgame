@@ -1,53 +1,46 @@
+javascript
 const story = [
 
 {
-    speaker: "Người dẫn chuyện",
-    text: "Map 1 - Thành phố dưới ánh trăng"
+    speaker:"",
+    text:"Sa mạc phương nam trải dài đến tận chân trời. Đoàn thương buôn lặng lẽ tiến về Ai Cập dưới ánh mặt trời rực cháy.",
+    background:"assets/backgrounds/desert.jpg",
+    character:""
 },
 
 {
-    speaker: "Người dẫn chuyện",
-    text: "Learian theo đoàn thương nhân vượt sa mạc tiến vào Ai Cập."
+    speaker:"",
+    text:"Trong đoàn người ấy có Learian, một lữ khách trẻ tuổi đến từ phương xa.",
+    background:"assets/backgrounds/desert.jpg",
+    character:""
 },
 
 {
-    speaker: "Người dẫn chuyện",
-    text: "Những cơn gió nóng bỏng mang theo cát vàng trải dài tới tận chân trời."
+    speaker:"",
+    text:"Sau nhiều ngày băng qua cồn cát, những bức tường vàng kim của kinh thành cuối cùng cũng hiện ra trước mắt.",
+    background:"assets/backgrounds/city.jpg",
+    character:""
 },
 
 {
-    speaker: "Learian",
-    text: "Cuối cùng cũng tới nơi rồi..."
+    speaker:"Salynya",
+    text:"Xin chào. Trông anh có vẻ không phải người của vương quốc này.",
+    background:"assets/backgrounds/market.jpg",
+    character:"assets/characters/salynya.png"
 },
 
 {
-    speaker: "Salynya",
-    text: "Xin chào người lữ khách. Ta là Salynya."
+    speaker:"Learian",
+    text:"Đúng vậy. Tôi vừa đặt chân tới đây hôm nay.",
+    background:"assets/backgrounds/market.jpg",
+    character:""
 },
 
 {
-    speaker: "Learian",
-    text: "Rất vui được gặp cô."
-},
-
-{
-    speaker: "Salynya",
-    text: "Vương quốc này đang trải qua những ngày kỳ lạ."
-},
-
-{
-    speaker: "Người dẫn chuyện",
-    text: "Từ đây một tình bạn mới được hình thành."
-},
-
-{
-    speaker: "Người dẫn chuyện",
-    text: "Nhưng cả hai đều không biết rằng những biến cố khủng khiếp đang chờ phía trước."
-},
-
-{
-    speaker: "Người dẫn chuyện",
-    text: "Hết bản thử nghiệm."
+    speaker:"Salynya",
+    text:"Vậy thì chào mừng đến với thành phố dưới ánh trăng.",
+    background:"assets/backgrounds/market.jpg",
+    character:"assets/characters/salynya.png"
 }
 
 ];

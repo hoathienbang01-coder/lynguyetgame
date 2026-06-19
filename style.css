@@ -1,78 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    overflow: hidden;
-    font-family: "Segoe UI", sans-serif;
-    background: black;
+body{
+    overflow:hidden;
+    font-family:"Segoe UI",sans-serif;
+    background:black;
 }
 
-#game {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+#game{
+    width:100vw;
+    height:100vh;
+    position:relative;
 }
 
-/* --- ĐÃ SỬA VÀ GỘP ĐOẠN NÀY --- */
-#character {
-    position: absolute;
-    left: 50%;
-    bottom: 220px;          /* Đẩy chân nhân vật vừa khít, chạm nhẹ lên đỉnh của hộp thoại textbox */
-    transform: translateX(-50%);
-    
-    height: 72vh;           /* Chiếm 72% chiều cao màn hình (To rõ ràng, không bị nhỏ nữa) */
-    width: auto;            /* Tự động co giãn chiều rộng theo chiều cao, giữ nguyên tỉ lệ ảnh */
-    object-fit: contain;
-    
-    z-index: 5;
-    pointer-events: none;
+#background{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-image:url("assets/backgrounds/desert.jpg");
+    background-size:cover;
+    background-position:center;
+
+    z-index:1;
 }
 
-#textbox {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 240px;
-    background: rgba(0, 0, 0, 0.72);
-    backdrop-filter: blur(5px);
-    color: white;
-    padding: 25px;
-    z-index: 10;            /* Đảm bảo hộp thoại luôn đè lên trên nhân vật */
+#character{
+    position:absolute;
+
+    left:50%;
+    bottom:120px;
+
+    transform:translateX(-50%);
+
+    height:80vh;
+
+    object-fit:contain;
+
+    z-index:5;
+
+    display:none;
 }
 
-#speaker {
-    font-size: 30px;
-    font-weight: bold;
-    color: #FFD369;
-    margin-bottom: 15px;
+#textbox{
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+    height:240px;
+
+    background:rgba(0,0,0,0.75);
+
+    backdrop-filter:blur(5px);
+
+    color:white;
+
+    padding:25px;
+
+    z-index:10;
 }
 
-#text {
-    font-size: 24px;
-    line-height: 1.8;
-    min-height: 100px;
+#speaker{
+    font-size:30px;
+    font-weight:bold;
+    color:#FFD369;
+
+    margin-bottom:15px;
 }
 
-#choices {
-    margin-top: 15px;
+#text{
+    font-size:24px;
+    line-height:1.8;
 }
 
-.choiceBtn {
-    width: 350px;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
+#nextBtn{
+    margin-top:15px;
 
-#nextBtn {
-    margin-top: 15px;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+    padding:12px 25px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:18px;
 }
