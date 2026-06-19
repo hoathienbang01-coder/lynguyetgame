@@ -1,93 +1,88 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    overflow:hidden;
-    font-family:"Segoe UI",sans-serif;
-    background:black;
+body {
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+    background: black;
 }
 
-#game{
-    width:100vw;
-    height:100vh;
-    position:relative;
+#game {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
-#background{
-    position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background-image:url("assets/backgrounds/desert.jpg");
-    background-size:cover;
-    background-position:center;
-
-    z-index:1;
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/backgrounds/desert.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
-#character{
-    position:absolute;
-
-    left:50%;
-    bottom:120px;
-
-    transform:translateX(-50%);
-
-    height:80vh;
-
-    object-fit:contain;
-
-    z-index:5;
-
-    display:none;
+/* --- ĐÃ SỬA CHỖ NÀY ĐỂ NHÂN VẬT TO VÀ CHẠM ĐÁY --- */
+#character {
+    position: absolute;
+    left: 50%;
+    bottom: 0;                  /* Cho đứng sát hẳn xuống đáy màn hình */
+    transform: translateX(-50%);
+    
+    height: 100vh;              /* Ép nhân vật cao full màn hình cho hoành tráng */
+    width: auto;                /* Tự động co giãn chiều rộng, giữ nguyên tỉ lệ ảnh */
+    object-fit: cover;          /* Giúp bức ảnh ngang tự lấp đầy không gian mà không bị thu nhỏ */
+    
+    z-index: 5;
+    display: none;              /* Mặc định ẩn, file game.js của hai sẽ tự bật 'block' khi cần */
 }
 
-#textbox{
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-    height:240px;
-
-    background:rgba(0,0,0,0.75);
-
-    backdrop-filter:blur(5px);
-
-    color:white;
-
-    padding:25px;
-
-    z-index:10;
+#textbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 25px 8%;           /* Thụt lề 2 bên một chút cho chữ đẹp */
+    z-index: 10;                /* Đảm bảo đè lên trên nhân vật */
 }
 
-#speaker{
-    font-size:30px;
-    font-weight:bold;
-    color:#FFD369;
-
-    margin-bottom:15px;
+#speaker {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFD369;
+    margin-bottom: 15px;
 }
 
-#text{
-    font-size:24px;
-    line-height:1.8;
+#text {
+    font-size: 24px;
+    line-height: 1.8;
 }
 
-#nextBtn{
-    margin-top:15px;
+/* --- ĐÃ SỬA NÚT "TIẾP TỤC" CHO NẰM GỌN VÀO GÓC PHẢI TEXTBOX --- */
+#nextBtn {
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+    padding: 12px 30px;
+    border: 1px solid #FFD369;
+    background: transparent;
+    color: #FFD369;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
 
-    padding:12px 25px;
-
-    border:none;
-
-    cursor:pointer;
-
-    font-size:18px;
+#nextBtn:hover {
+    background: #FFD369;
+    color: black;
 }
