@@ -86,12 +86,18 @@ function openDuanBossPanel() {
                 playerInventory.push("Lọ pha lê tím nạm vàng");
             }
             resultDiv.style.color = "#4E9F3D";
-            resultDiv.innerHTML = `🎉 CHÍNH XÁC! Bạn giữ nguyên ${userStars} ⭐ và nhận được 🎁 [Manh mối số 1: Lọ pha lê tím nạm vàng]. Hệ thống đang chuẩn bị chuyển sang Chương 3...`;
+            
+            // CHÈN THÊM ẢNH VẬT PHẨM VÀO ĐÂY:
+            resultDiv.innerHTML = `
+                <div style="margin: 15px 0; text-align: center;">
+                    <img src="assets/vatpham_1.jpg" alt="Lọ pha lê tím" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; box-shadow: 0 0 10px #FFD369;">
+                </div>
+                🎉 CHÍNH XÁC! Bạn giữ nguyên ${userStars} ⭐ và nhận được 🎁 [Manh mối số 1: Lọ pha lê tím nạm vàng]. Hệ thống đang chuẩn bị chuyển sang Chương 3...
+            `;
             
             setTimeout(() => {
                 nextBtn.style.display = "block";
-                // Chuyển sang chương kế tiếp (Ở đây tạm thời kết thúc demo chương 2)
-                text.textContent = "Bạn đã vượt qua Lượt suy luận xuất sắc! Hãy chờ đón Chương 3 sắp tới nhé.";
+                text.textContent = "Bạn đã vượt qua Lượt suy luận xuất sắc! Hãy ấn Tiếp tục để bước vào Chương 3.";
             }, 5000);
 
         } else {
