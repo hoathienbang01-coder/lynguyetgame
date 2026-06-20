@@ -211,4 +211,111 @@ const story = [
         background: "",
         character: "assets/characters/learian.jpg" // Kết thúc chương với hình bóng Learian đượm buồn
     }
-];
+    // ================= CHƯƠNG 2 =================
+    {
+        speaker: "",
+        text: "CHƯƠNG 2: Bóng đêm của đứa con Ai Cập\n\nNhững ngày sau cuộc gặp gỡ đầu tiên, Learian dần trở thành vị khách quen thuộc trong hoàng cung. Ban đầu, sự xuất hiện của hắn chỉ gói gọn trong những cuộc trò chuyện ngắn tại thư viện hoàng gia cùng Công chúa Salynya, nơi ánh sáng xuyên qua những khung cửa đá cao đổ xuống từng trang sách cổ, tạo thành những vệt sáng dài trầm mặc như thời gian bị kéo giãn. Nhưng theo thời gian, những cuộc gặp ấy không còn dừng lại ở vài lời trao đổi đơn thuần nữa. Chúng dần kéo dài thành những buổi đi dạo dưới hàng cột đá trắng của hoàng cung, nơi gió sa mạc thổi qua mang theo hơi nóng khô và mùi cát xa xăm...",
+        background: "assets/background/hoangcung.jpg", // Đổi sang cảnh nền hoàng cung nếu có
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Người trong cung điện ban đầu còn dè chừng sự hiện diện của Learian... Nhưng dần dần, sự dè chừng ấy không còn mang hình dạng cảnh giác rõ rệt nữa, mà chuyển thành sự quen thuộc thầm lặng. Hắn chỉ xuất hiện bên cạnh công chúa, như một phần không chính thức nhưng lại ổn định đến kỳ lạ trong nhịp sống của hoàng cung.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Salynya là người ít nói hơn trong những cuộc trò chuyện ấy, nhưng lại luôn là người kéo câu chuyện đi xa hơn bằng những câu hỏi không có điểm dừng... Mỗi khi Learian nhắc đến biển, đến những vùng đất xa xôi, ánh mắt nàng lại có một thoáng thay đổi rất nhỏ, như thể trong sâu thẳm, có thứ gì đó đang bị đánh thức khỏi sự im lặng lâu dài.",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Sự thay đổi ấy không thoát khỏi ánh mắt của Pharaoh Aljudius. Ông là một vị vua mang khí chất của sa mạc và mặt trời, làn da màu đồng sẫm mang dấu vết của quyền lực và thời gian, ánh mắt vàng kim sắc bén như thể có thể xuyên qua mọi lời nói dối. Nhưng phía sau tất cả quyền uy ấy không chỉ là một người trị vì, mà còn là một người cha luôn đặt con gái mình ở vị trí an toàn nhất...",
+        background: "",
+        character: "assets/characters/pharaoh.jpg" // Đặt sẵn để sau này hai up ảnh vua
+    },
+    {
+        speaker: "",
+        text: "Hoàng hậu Sylany đứng bên cạnh Pharaoh như một sự đối lập hoàn toàn. Bà không mang khí chất áp đảo, mà là sự dịu dàng mang tính ổn định. Mái tóc vàng của bà rơi xuống vai như ánh sáng buổi sớm, đôi mắt xanh biếc như dòng nước chảy qua sa mạc khô cằn.",
+        background: "",
+        character: "assets/characters/hoanghau.jpg"
+    },
+    {
+        speaker: "",
+        text: "Ở phía sau ngai vàng, Tể tướng Kadius luôn đứng trong vị trí quen thuộc của mình. Khuôn mặt ông mang những đường nét khắc nghiệt của thời gian và trách nhiệm, ánh mắt luôn quan sát nhiều hơn là phản ứng... Đối lập hoàn toàn với ông là Tư tế Gonius - người đứng gần nhất với thần điện, luôn xuất hiện đúng lúc, luôn nói đúng điều cần nói. Không ai nghi ngờ ông.",
+        background: "",
+        character: "assets/characters/tuthe.jpg"
+    },
+    {
+        speaker: "",
+        text: "Cho đến đêm thứ mười lăm kể từ khi đoàn thương nhân đặt chân đến Ai Cập. Một nữ hầu trong cung điện biến mất. Không tiếng động. Không dấu vết. Không một lời kêu cứu. Ban đầu, sự việc được xem như một trường hợp cá biệt... Nhưng rồi người thứ hai biến mất. Người thứ ba. Người thứ tư. Tất cả đều là nữ. Tất cả đều trẻ. Tất cả biến mất trong đêm.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Salynya là người đầu tiên không chấp nhận sự im lặng đó. Nàng bắt đầu thu thập danh sách, tự mình đối chiếu thời gian, địa điểm, thói quen sinh hoạt... Càng đi sâu, nàng càng nhận ra một điểm bất thường rõ rệt: tất cả nạn nhân đều là nữ và đều nằm trong một khoảng tuổi gần như giống nhau. Không phải sự ngẫu nhiên. Mà là một dạng lựa chọn có quy tắc.",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Có thứ gì đó đang chọn họ.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Learian nhìn những bản ghi chép trải trước mặt, ánh mắt chậm lại một nhịp. Hắn không nói ngay. Nhưng trong hắn, một cảm giác cũ kỹ hơn bắt đầu xuất hiện, giống như khi một ký ức bị chạm vào đúng điểm đã từng bị phong ấn.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "But trước khi cuộc điều tra có thể tiến xa hơn, một biến cố khác xảy ra mạnh hơn, trực diện hơn: Rượu của Pharaoh bị đầu độc! Sự việc chỉ bị ngăn lại trong khoảnh khắc cuối cùng khi Salynya nhận ra sự thay đổi rất nhỏ trong phản xạ ánh sáng trên chiếc ly bạc. Ngay lập tức, toàn bộ khu vực bị phong tỏa.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Tể tướng Kadius trực tiếp chỉ huy toàn bộ quá trình điều tra. Nhưng càng điều tra, kết quả càng trở nên trống rỗng. Không tìm thấy chất độc rõ ràng. Không xác định được cách thức. Người phụ trách ly rượu cũng biến mất ngay trong đêm đó. Không có hung thủ. Chỉ có một khoảng trống được tạo ra có chủ ý.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Đêm hôm ấy, Learian đứng cùng Salynya trên ban công cao nhất của hoàng cung. Thành phố phía dưới trải dài trong ánh đèn vàng mờ, nhịp sống vẫn tiếp tục nhưng mang một cảm giác nặng nề khó gọi tên. Xa hơn, hồ Selena nằm yên trong bóng tối, phản chiếu ánh trăng như một tấm gương không bao giờ gợn.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "Salynya",
+        text: "“Ngài nghĩ đây là ai?”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Ta không biết. Nhưng đây không phải thứ chỉ có một người làm.”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Nếu có ai đó đang làm tổn thương vương quốc này… Ta sẽ tìm ra.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Ở phía xa đại điện, dưới ánh đuốc vàng, Tư tế Gonius đứng lặng nhìn thành phố. Khuôn mặt ông bình thản như mọi ngày, ánh mắt phản chiếu ánh sáng như thể đang nhìn thấy một trật tự sâu hơn toàn bộ những gì đang diễn ra. Và ở nơi sâu nhất dưới hồ Selena, một thứ gì đó khẽ phản ứng lại ánh trăng...",
+        background: "",
+        character: "assets/characters/tuthe.jpg"
+    },
+    
+    // Đánh dấu đây là kết thúc Chương 2 để kích hoạt Mini-game
+    {
+        triggerDuanBoss: true 
+    }
