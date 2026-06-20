@@ -40,15 +40,41 @@ body {
 
 #textbox {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 240px; /* Cố định chiều cao để hiện chữ */
+    bottom: 20px; /* Đẩy hộp thoại cách đáy màn hình 20px để không bị dính sát */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Cho hộp thoại rộng ra một chút (90%) để chứa được nhiều chữ hơn */
+    min-height: 180px; /* Chiều cao tối thiểu, nếu chữ nhiều khung sẽ TỰ CO GIÃN rộng lên trên */
+    height: auto; /*  BẮT BUỘC: Cho phép tự động co giãn theo chữ */
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(5px);
     color: white;
     padding: 25px;
+    padding-bottom: 80px; /* Tạo khoảng trống ở đáy để nút "Tiếp tục" không đè lên chữ */
     z-index: 10;
+    border-radius: 8px; /* Bo góc một chút nhìn cho chuyên nghiệp */
+}
+
+#text {
+    font-size: 22px; /* Giảm nhẹ font chữ xuống 22px đọc cho thanh thoát và vừa vặn */
+    line-height: 1.6;
+    word-wrap: break-word; /* Đảm bảo chữ xuống dòng mượt mà */
+}
+
+/* ĐỊNH DẠNG LẠI NÚT TIẾP TỤC ĐỂ KHÔNG BỊ LỆCH MÀN HÌNH */
+#nextBtn {
+    position: absolute;
+    right: 30px;
+    bottom: 20px; /* Ghìm chặt nút nằm ở góc dưới bên phải của hộp thoại */
+    padding: 10px 25px;
+    border: none;
+    background: #FFD369;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 11;
 }
 
 #speaker {
