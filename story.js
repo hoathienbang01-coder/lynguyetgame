@@ -667,3 +667,45 @@ const story = [
     {
         triggerDuanBoss5: true
     }
+// ================= CHƯƠNG 6 =================
+    {
+        speaker: "",
+        text: "CHƯƠNG 6: LỜI NGUYỀN CỦA NHỮNG KẺ NGOẠI LAI\n\nCái chết của Lussahna không khép lại bi kịch, nó chỉ khiến bi kịch chuyển sang một dạng tồn tại khác, lặng hơn, dai hơn. Trong hoàng cung, Salynya không còn xuất hiện với dáng vẻ điềm tĩnh quen thuộc, nàng tự nhốt mình trong thư phòng giữa những bản điều tra chồng chất như một mê cung không lối thoát. Learian ở bên nàng như một điểm tựa im lặng, cùng nàng ghép lại những mảnh vỡ của một sự thật đang dần trở nên quá lớn.",
+        background: "assets/background/hoangcung.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Rồi tin đồn xuất hiện, ban đầu là lời thì thầm ở chợ, sau đó thành niềm tin: rằng tất cả những vụ mất tích bắt đầu từ khi những kẻ ngoại lai đặt chân đến Ai Cập, và rằng chỉ có trục xuất hoặc hiến tế mới có thể khôi phục lại trật tự. Gia đình công tước Rohan lập tức bị đẩy vào tâm điểm của cơn bão đó. Learian lần đầu tiên cảm nhận rõ ràng ánh mắt từng thân thiện bắt đầu biến thành nghi ngờ, dè chừng, và cuối cùng là phán xét.",
+        background: "assets/background/khucho.jpg",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Salynya không chấp nhận sự hình thành của một “sự thật tiện lợi” như vậy. Ngay trong thiết triều, nàng đứng lên từ chối để công lý bị bóp méo bởi đám đông. Nàng nói không thể lấy nỗi sợ làm nền tảng cho quyết định của vương quốc, nhưng lời nàng không đủ để dập tắt cơn sóng dữ. Trước áp lực từ các đại thần, Pharaoh chọn cách cho một tháng điều tra để trì hoãn sự sụp đổ của niềm tin.",
+        background: "assets/background/daidien.jpg", // Cảnh đại điện thiết triều
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Đêm đó, Learian đứng một mình trên ban công nơi đoàn thương nhân nghỉ chân. Hắn hiểu Salynya quá kiên định, quá tin vào việc có thể giữ mọi thứ nguyên vẹn, đến mức điều đó trở thành điểm yếu lớn nhất của nàng. Nam tước Dos xuất hiện trong im lặng từ phía sau, khẽ hỏi Learian đang nghĩ gì, nhưng đáp lại chỉ là sự thừa nhận lạnh lẽo về một tương lai bất định.",
+        background: "assets/background/haicang.jpg",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Những ngày sau đó, cuộc điều tra đi sâu hơn vào tầng tối của sự thật. Mọi dấu vết tin đồn đều dẫn về cùng một nguồn: một người đàn ông bí ẩn liên tục gieo rắc câu chuyện về lời nguyền ngoại lai rồi biến mất. Khi họ tìm được hắn trong một khu nhà bỏ hoang gần bến cảng, hắn đã chết một cách lặng lẽ đến phi lý.",
+        background: "assets/background/nhahoang.jpg", // Cảnh nhà hoang nếu có
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Dưới tấm phản gỗ tại hiện trường, Salynya tìm thấy một lá thư cũ không người gửi, không người nhận. Những dòng chữ rời rạc bên trong nhắc đến một cái tên bí ẩn: Rojefh, và một kế hoạch trả thù đã kéo dài nhiều năm trong bóng tối của vương quốc. Cùng lúc đó, ở nơi rất xa bên dưới lòng hồ Selena, mặt nước vốn tĩnh lặng bỗng rung lên những gợn sóng cực nhỏ, báo hiệu thời điểm của nó đang đến gần...",
+        background: "assets/background/hoselena.jpg",
+        character: "assets/characters/salynya.jpg"
+    },
+    
+    // Kích hoạt lượt suy luận đoán Boss phụ Chương 6
+    {
+        triggerDuanBoss6: true
+    }
