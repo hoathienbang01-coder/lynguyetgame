@@ -709,3 +709,118 @@ const story = [
     {
         triggerDuanBoss6: true
     }
+// ================= CHƯƠNG 7 =================
+    {
+        speaker: "Hệ thống",
+        text: "✨ CHÀO MỪNG BẠN ĐẾN VỚI CHƯƠNG 7: TẾ ĐÀN DƯỚI ÁNH TRĂNG ✨",
+        background: "assets/background/hoselena.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Đêm trăng ở Hồ Selena không còn mang vẻ đẹp của một vùng nước linh thiêng. Nó giống một 'vết nứt' khổng lồ nuốt chửng mọi ánh sáng. Vũ Bạch đứng ở rìa hồ, ánh mắt không rời khỏi mặt nước đang dao động rất khẽ. Nơi này giờ là ranh giới cuối cùng giữa thế giới con người và một tầng tồn tại đã bị phong ấn từ rất lâu.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Gonius xuất hiện giữa làn sương, đứng ở vị trí trung tâm như một phần của chính nghi thức này cuối cùng cũng được gọi tên.",
+        background: "",
+        character: "assets/characters/tute.jpg"
+    },
+    {
+        speaker: "Gonius",
+        text: "“Các ngươi đã đi đúng đường, nhưng con đường đó chưa từng dẫn ra ngoài.”",
+        background: "",
+        character: "assets/characters/tute.jpg"
+    },
+    {
+        speaker: "",
+        text: "Mặt hồ Selena bắt đầu chuyển động, các ký tự cổ xưa nổi lên và tiếng thì thầm của hàng trăm linh hồn vang lên như ký ức đang tan rã. Learian siết chặt kiếm, nhận ra mình đang đứng trong một cơ chế đã hoàn thiện từ rất lâu.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Gonius",
+        text: "“Ngươi không thể phá nó, vì nó được tạo ra để giữ cho thế giới này còn có thể tiếp tục tồn tại.”",
+        background: "",
+        character: "assets/characters/tute.jpg"
+    },
+    {
+        speaker: "",
+        text: "Trận chiến bắt đầu! Mỗi nhát kiếm của Learian làm rung chuyển toàn bộ ký ức bị phong ấn. Càng tiến sâu, hắn càng nhận ra Gonius không phải kẻ gieo rắc lời nguyền, mà là kẻ giữ cho thứ kinh khủng bên dưới không tràn ra thế giới.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "Gonius",
+        text: "“Ngươi không hiểu… đây không phải lời nguyền… đây là cánh cửa. Và nếu nó mở sai cách, thế giới này sẽ không còn khái niệm về sự sống nữa!”",
+        background: "",
+        character: "assets/characters/tute.jpg"
+    },
+    {
+        speaker: "",
+        text: "Khi Gonius gục xuống, toàn bộ cấu trúc dưới hồ Selena bắt đầu sụp đổ. Những linh hồn bị phong ấn tràn ra trong ánh sáng vỡ vụn. Nhưng ngay trong khoảnh khắc đó, Salynya bước ra mặt hồ, không ai có thể ngăn lại.",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Ngươi đã biết rồi đúng không?”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Ta không bị đưa vào nơi này, ta là thứ giữ cho nó không sụp đổ hoàn toàn.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Salynya tự nguyện bước vào trung tâm hồ Selena, nơi toàn bộ ký tự cổ xưa đang hội tụ.",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Dừng lại!”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“If I stay... those souls will never be able to leave the darkness. Don't look for me.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Nàng buông mình xuống. Ánh sáng bùng lên thanh tẩy và tái cấu trúc lại thế giới. Salynya tan vào ánh sáng như một 'chìa khóa sống' hoàn thành sứ mệnh duy nhất của đời mình.",
+        background: "assets/background/anhsang.jpg", // Cảnh nền bùng sáng nếu có
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Khi ánh sáng tắt đi, Hồ Selena trở lại tĩnh lặng. Lời nguyền tan biến, những linh hồn được giải phóng. Vương quốc được cứu nhưng không ai ăn mừng. Chỉ còn lại một khoảng trống vô hạn trong hoàng tộc.",
+        background: "assets/background/hoselena.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Learian rời khỏi Ai Cập trên cỗ xe ngựa hướng về phía bình minh. Trong khoảnh khắc ấy, ý thức của Vũ Bạch chậm rãi tách rời khỏi thân xác Learian, tiến về một thế giới khác, nơi những cái tên mới và những lựa chọn mới đang chờ sẵn.",
+        background: "assets/background/sa-mac.jpg",
+        character: ""
+    },
+    {
+        speaker: "Vũ Bạch",
+        text: "“Nếu phải quên để thế giới tiếp tục sống… vậy cái giá của việc nhớ là gì?”",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "Hệ thống",
+        text: "🎉 HOÀN THÀNH TOÀN BỘ TRÒ CHƠI 🎉\n\nCảm ơn bạn đã trải nghiệm hành trình ly kỳ của Vũ Bạch tại thế giới Ai Cập Cổ Đại!",
+        background: "assets/background/sa-mac-khoi-dau.jpg",
+        character: ""
+    }
