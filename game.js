@@ -5,9 +5,8 @@ let wrongAnswersCount = 0;
 let gameStarted = false; 
 let isPaused = false; 
 
-// Biến toàn cục kiểm soát hình nền liên tục
+// Biến toàn cục để giữ hình nền không bao giờ bị đen
 let lastValidBackground = "";
-// Biến ghi nhớ chương hiện tại để không bị lặp intro chương liên tục
 let currentChapterTracked = null; 
 
 // Khai báo nhạc nền
@@ -22,11 +21,23 @@ const background = document.getElementById("background");
 const nextBtn = document.getElementById("nextBtn");
 const pauseBtn = document.getElementById("pauseBtn");
 
-// Tự động căn chỉnh lại CSS cho background để hiển thị full màn hình, không bị lỗi đen nền
+// ÉP CẤU TRÚC HÌNH NỀN KHÔNG BỊ ĐEN (Dùng thuộc tính bao phủ tuyệt đối)
 if (background) {
+    background.style.position = "absolute";
+    background.style.top = "0";
+    background.style.left = "0";
+    background.style.width = "100%";
+    background.style.height = "100%";
     background.style.backgroundSize = "cover";
     background.style.backgroundPosition = "center";
     background.style.backgroundRepeat = "no-repeat";
+    background.style.zIndex = "1"; // Nền nằm dưới cùng
+}
+
+// Đảm bảo khung dialogue nằm trên nền
+const dialogueBox = document.getElementById("dialogue-box");
+if (dialogueBox) {
+    dialogueBox.style.zIndex = "10"; 
 }
 
 if (nextBtn) {
@@ -35,7 +46,6 @@ if (nextBtn) {
     nextBtn.style.color = "white";
 }
 
-// Giao diện hiển thị số sao ⭐
 const starDisplay = document.createElement("div");
 starDisplay.style = "position:absolute; top:20px; left:20px; color:#FFD369; font-size:24px; font-weight:bold; z-index:100; text-shadow: 2px 2px black;";
 starDisplay.innerHTML = "⭐ ".repeat(userStars);
@@ -45,28 +55,26 @@ function updateStars() {
     starDisplay.innerHTML = "⭐ ".repeat(userStars);
 }
 
-// TẠO DIỆN MẠO BOX POPUP ĐỘC LẬP CHÍNH GIỮA MÀN HÌNH (Intro Chương & Hiện Vật Phẩm)
+// TẠO BOX INTRO / VẬT PHẨM ĐỘC LẬP ÉP RA CHÍNH GIỮA MÀN HÌNH TUYỆT ĐỐI
 const globalPopup = document.createElement("div");
 globalPopup.id = "globalPopup";
-globalPopup.style = `
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 600px;
-    background: rgba(0, 0, 0, 0.85);
-    border: 3px solid #FFD369;
-    border-radius: 12px;
-    padding: 30px;
-    color: white;
-    text-align: center;
-    z-index: 200;
-    display: none;
-    box-shadow: 0px 0px 25px rgba(255, 211, 105, 0.5);
-    font-family: sans-serif;
-`;
-document.getElementById("game").appendChild(globalPopup);
+globalPopup.style.position = "fixed"; // Sử dụng fixed để cố định giữa màn hình thiết bị
+globalPopup.style.top = "50%";
+globalPopup.style.left = "50%";
+globalPopup.style.transform = "translate(-50%, -50%)";
+globalPopup.style.width = "85%";
+globalPopup.style.maxWidth = "600px";
+globalPopup.style.background = "rgba(0, 0, 0, 0.9)"; // Box nền trong suốt nghệ thuật
+globalPopup.style.border = "3px solid #FFD369";
+globalPopup.style.borderRadius = "12px";
+globalPopup.style.padding = "40px 30px";
+globalPopup.style.color = "white";
+globalPopup.style.textAlign = "center";
+globalPopup.style.zIndex = "9999"; // Siêu cao để đè lên mọi thứ khác
+globalPopup.style.display = "none";
+globalPopup.style.boxShadow = "0px 0px 30px rgba(255, 211, 105, 0.6)";
+globalPopup.style.boxSizing = "border-box";
+document.body.appendChild(globalPopup); // Gắn hẳn vào body để không bị dính CSS của div cha
 
 // --- LOGIC NÚT TẠM DỪNG GAME ---
 if (pauseBtn) {
@@ -97,14 +105,13 @@ if (pauseBtn) {
 function showScene() {
     let scene = story[current];
 
-    // 1. Kiểm tra và chặn kích hoạt Mini-game đoán Boss
     if (scene.triggerDuanBoss) { openDuanBossPanel(); return; }
     if (scene.triggerDuanBoss3) { openDuanBoss3Panel(); return; }
     if (scene.triggerDuanBoss4) { openDuanBoss4Panel(); return; }
     if (scene.triggerDuanBoss5) { openDuanBoss5Panel(); return; }
     if (scene.triggerDuanBoss6) { openDuanBoss6Panel(); return; }
 
-    // 2.SỬA LỖI MẤT NỀN ĐEN: Ép kiểm tra và giữ chặt nền cũ
+    // SỬA LỖI MẤT NỀN ĐEN: Ép gán ảnh nền bằng CSS mạnh
     if (scene.background && scene.background.trim() !== "") {
         lastValidBackground = `url('${scene.background}')`;
         background.style.backgroundImage = lastValidBackground;
@@ -112,41 +119,32 @@ function showScene() {
         background.style.backgroundImage = lastValidBackground;
     }
 
-    // 3.XỬ LÝ BOX INTRO ĐẦU CHƯƠNG CHÍNH GIỮA MÀN HÌNH
-    // Kiểm tra xem cảnh này có đánh dấu chương mới không (Ví dụ: scene.chapter = "Chương 1: Bình minh Ai Cập")
+    // SỬA LỖI CHỮ TIÊU ĐỀ CHƯƠNG KHÔNG RA GIỮA MÀN HÌNH
     if (scene.chapter && scene.chapter !== currentChapterTracked) {
-        currentChapterTracked = scene.chapter; // Khóa chương lại tránh lặp lại
+        currentChapterTracked = scene.chapter; 
 
-        // Ẩn tạm thời khung thoại cốt truyện phía dưới
-        document.getElementById("dialogue-box").style.opacity = "0"; 
+        if (dialogueBox) dialogueBox.style.opacity = "0"; 
         nextBtn.style.display = "none"; 
 
-        // Hiển thị Box giữa màn hình dạng trong suốt nghệ thuật
         globalPopup.style.display = "block";
-        globalPopup.style.background = "rgba(0, 0, 0, 0.85)";
-        globalPopup.style.border = "2px solid #FFD369";
         globalPopup.innerHTML = `
-            <h1 style="color: #FFD369; font-size: 28px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">🎬 BẮT ĐẦU CHƯƠNG MỚI</h1>
-            <p style="font-size: 20px; font-weight: bold; line-height: 1.6; color: #FFFFFF; margin-bottom: 25px;">${scene.chapter}</p>
-            <button id="closeIntroBtn" style="padding: 12px 35px; font-size: 16px; background: #FF4C29; color: white; border: none; font-weight: bold; cursor: pointer; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Tiếp tục truyện ➔</button>
+            <h1 style="color: #FFD369; font-size: 26px; margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 2px;">🎬 CHÀO MỪNG ĐẾN VỚI CHƯƠNG MỚI</h1>
+            <p style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #FFFFFF; margin: 0 0 30px 0;">${scene.chapter}</p>
+            <button id="closeIntroBtn" style="padding: 12px 40px; font-size: 16px; background: #FF4C29; color: white; border: none; font-weight: bold; cursor: pointer; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">Tiếp tục chơi ➔</button>
         `;
 
         document.getElementById("closeIntroBtn").addEventListener("click", () => {
-            globalPopup.style.display = "none"; // Tắt box intro
-            document.getElementById("dialogue-box").style.opacity = "1"; // Hiện lại khung thoại cốt truyện
+            globalPopup.style.display = "none"; 
+            if (dialogueBox) dialogueBox.style.opacity = "1"; 
             nextBtn.style.display = "block"; 
-            
-            // Chạy tiếp nội dung thoại của cảnh đó
             renderThoaiTruyen(scene);
         });
-        return; // Dừng hàm lại, chờ người chơi bấm Tiếp tục ở Box Intro
+        return; 
     }
 
-    // Nếu không có intro chương, chạy thẳng hiển thị thoại truyện bình thường
     renderThoaiTruyen(scene);
 }
 
-// Hàm phụ trợ đổ dữ liệu văn bản truyện
 function renderThoaiTruyen(scene) {
     speaker.textContent = scene.speaker || "";
     text.textContent = scene.text || "";
@@ -165,6 +163,7 @@ function renderThoaiTruyen(scene) {
     if (scene.character && scene.character !== "") {
         character.src = scene.character;
         character.style.display = "block";
+        character.style.zIndex = "5";
     } else {
         character.style.display = "none";
     }
@@ -179,7 +178,7 @@ nextBtn.addEventListener("click", () => {
         nextBtn.style.background = "#FFD369";
         nextBtn.style.color = "black";
         
-        bgm.play().catch(e => console.log("Kích hoạt âm thanh"));
+        bgm.play().catch(e => console.log("Kích hoạt nhạc"));
         showScene();
         return;
     }
@@ -200,24 +199,18 @@ nextBtn.addEventListener("click", () => {
 speaker.textContent = "Hệ thống";
 text.textContent = "Chào mừng bạn đến với trò chơi cốt truyện tương tác Ai Cập Cổ Đại. Hãy nhấn nút phía dưới để kích hoạt hành trình bí ẩn!";
 
-
-// ========================================================
-//  CÁC HÀM XỬ LÝ MINI-GAME SUY LUẬN ĐOÁN BOSS ĐỘC LẬP
-// ========================================================
-
-// Hàm hiển thị Popup chúc mừng nhận vật phẩm dạng hộp thoại riêng, tránh lỗi CSS đè ảnh
+// Hàm hiển thị Popup chúc mừng nhận vật phẩm độc lập chính giữa màn hình
 function showVatPhamSuccessPopup(tenVatPham, duongDanAnh, callback) {
     globalPopup.style.display = "block";
-    globalPopup.style.background = "rgba(10, 25, 47, 0.95)";
     globalPopup.style.border = "3px solid #4E9F3D";
     globalPopup.innerHTML = `
-        <h2 style="color: #4E9F3D; margin-bottom: 10px;">🎉 SUY LUẬN CHÍNH XÁC!</h2>
-        <p style="font-size: 16px;">Bạn đã xuất sắc tìm ra manh mối và nhận được vật phẩm:</p>
+        <h2 style="color: #4E9F3D; margin: 0 0 10px 0;">🎉 SUY LUẬN CHÍNH XÁC!</h2>
+        <p style="font-size: 16px; margin: 0 0 15px 0;">Bạn đã xuất sắc tìm ra manh mối và nhận được vật phẩm:</p>
         <div style="margin: 20px 0;">
-            <img src="${duongDanAnh}" alt="${tenVatPham}" style="width: 140px; height: 140px; object-fit: contain; border: 2px solid #FFD369; border-radius: 10px; background: rgba(255,255,255,0.1); padding: 5px;">
+            <img src="${duongDanAnh}" alt="${tenVatPham}" style="width: 150px; height: 150px; object-fit: contain; border: 2px solid #FFD369; border-radius: 10px; background: rgba(255,255,255,0.15); padding: 5px;">
         </div>
-        <p style="color: #FFD369; font-weight: bold; font-size: 18px;">🎁 [Manh mối: ${tenVatPham}]</p>
-        <p style="font-size: 12px; color: #aaa; margin-top: 15px;">Hệ thống tự động chuyển cảnh sau vài giây...</p>
+        <p style="color: #FFD369; font-weight: bold; font-size: 18px; margin: 0;">🎁 [Manh mối: ${tenVatPham}]</p>
+        <p style="font-size: 13px; color: #aaa; margin: 15px 0 0 0;">Hệ thống tự động chuyển cảnh sau vài giây...</p>
     `;
     setTimeout(() => {
         globalPopup.style.display = "none";
@@ -242,7 +235,6 @@ function openDuanBossPanel() {
 
         if (isCorrect) {
             if (!playerInventory.includes("Lọ pha lê tím nạm vàng")) playerInventory.push("Lọ pha lê tím nạm vàng");
-            // Gọi popup hiển thị ảnh độc lập cực chuẩn
             showVatPhamSuccessPopup("Lọ pha lê tím nạm vàng", "assets/vatpham_1.jpg", () => {
                 nextBtn.style.display = "block"; current++; showScene();
             });
