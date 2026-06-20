@@ -123,14 +123,15 @@ function openDuanBossPanel() {
     });
 }
 
-nextBtn.addEventListener("click",()=>{
+// --- BẮT ĐẦU SỬA TỪ ĐOẠN NÚT CLICK "TIẾP TỤC" ---
+nextBtn.addEventListener("click", () => {
     if (bgm.paused) {
         bgm.play().catch(e => console.log("Trình duyệt chặn phát tự động"));
     }
 
     current++;
 
-    if(current >= story.length){
+    if (current >= story.length) {
         current = story.length - 1;
         if (currentVoice) currentVoice.pause();
         speaker.textContent = ""; 
@@ -141,4 +142,52 @@ nextBtn.addEventListener("click",()=>{
     showScene();
 });
 
+// --- HÀM SHOWSCENE DUY NHẤT VÀ CHUẨN LOGIC CHO CẢ 3 CHƯƠNG ---
+function showScene() {
+    let scene = story[current];
+
+    // 1. KIỂM TRA ĐOẠN PHẢI ĐOÁN BOSS CHƯƠNG 2
+    if (scene.triggerDuanBoss) {
+        openDuanBossPanel();
+        return;
+    }
+
+    // 2. KIỂM TRA ĐOẠN PHẢI ĐOÁN BOSS CHƯƠNG 3
+    if (scene.triggerDuanBoss3) {
+        openDuanBoss3Panel();
+        return;
+    }
+
+    // 3. HIỂN THỊ CHỮ THOẠI VÀ TÊN NHÂN VẬT
+    speaker.textContent = scene.speaker;
+    text.textContent = scene.text;
+
+    // 4. TỰ ĐỘNG ĐIỀU CHỈNH ÂM LƯỢNG NHẠC NỀN
+    if (scene.speaker && scene.speaker !== "") {
+        bgm.volume = 0.2; // Có thoại thì nhạc nhỏ
+    } else {
+        bgm.volume = 0.4; // Lời dẫn thì nhạc to hơn
+    }
+
+    // 5. XỬ LÝ PHÁT GIỌNG LỒNG TIẾNG (VOICE)
+    if (currentVoice) currentVoice.pause();
+    currentVoice = new Audio(`assets/voice_${current}.mp3`);
+    currentVoice.volume = 0.9;
+    currentVoice.play().catch(e => console.log("Chờ người chơi tương tác để phát voice"));
+
+    // 6. XỬ LÝ ĐỔI ẢNH NỀN (BACKGROUND)
+    if (scene.background && scene.background !== "") {
+        background.style.backgroundImage = `url('${scene.background}')`;
+    }
+
+    // 7. XỬ LÝ ẨN/HIỆN ẢNH NHÂN VẬT
+    if (scene.character && scene.character !== "") {
+        character.src = scene.character;
+        character.style.display = "block";
+    } else {
+        character.style.display = "none";
+    }
+}
+
+// KÍCH HOẠT CẢNH ĐẦU TIÊN KHI VÀO GAME
 showScene();
