@@ -319,3 +319,135 @@ const story = [
     {
         triggerDuanBoss: true 
     }
+// ================= CHƯƠNG 3 =================
+    {
+        speaker: "",
+        text: "CHƯƠNG 3: LỜI THÌ THẦM BÊN HỒ SELENA\n\nSau vụ đầu độc bất thành nhằm vào Pharaoh, bầu không khí trong hoàng cung không còn giữ được vẻ yên ổn như trước. Mọi thứ vẫn vận hành theo đúng quỹ đạo của nó... Nhưng phía sau lớp vỏ bình thường ấy, một cảm giác bất an không tên đã bắt đầu len lỏi, như một vết nứt rất nhỏ trong nền đá cổ, chưa vỡ ra nhưng đã đủ để khiến người ta không thể làm ngơ. Những vụ mất tích vẫn chưa dừng lại. Người đầu tiên biến mất là một tỳ nữ trong cung. Người thứ hai là một cô gái làm việc tại khu chợ phía Nam. Người thứ ba là một nữ tu tập sự trong đền thờ. Không ai tìm được tung tích của họ. Không nhân chứng, không thi thể, không dấu vết.",
+        background: "assets/background/hoangcung.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Càng nhiều người biến mất, cảm giác bất an càng lan rộng trong hoàng cung. Nó ăn mòn từng lớp niềm tin một cách chậm rãi... Salynya là người đầu tiên không chấp nhận sự im lặng đó. Nàng bắt đầu tự mình thu thập toàn bộ danh sách những người mất tích. Nàng đích thân gặp gỡ gia đình các nạn nhân, lắng nghe những câu chuyện lặp lại trong đau đớn và hoang mang. Không có điểm chung rõ ràng nào ngoài việc tất cả đều là nữ và đều trong độ tuổi tương đối gần nhau.",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Không phải ngẫu nhiên.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Learian đứng bên cạnh, ánh mắt dừng lại trên những trang giấy ghi chép. Hắn không ngắt lời. Có những điều không cần nói ra vẫn có thể cảm nhận được. Đây không phải một chuỗi sự kiện rời rạc. Đây là một cấu trúc. Một sự lựa chọn có chủ đích đang vận hành trong bóng tối mà họ chưa nhìn thấy hình dạng thật sự.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Nhưng khi cuộc điều tra còn chưa kịp đi xa hơn, một biến cố khác đã xảy ra: Rượu của Pharaoh bị đầu độc! Khoảnh khắc đó chỉ bị ngăn lại trong gang tấc khi Salynya phát hiện sự thay đổi rất nhỏ trong phản xạ ánh sáng trên chiếc ly bạc. Ngay lập tức, toàn bộ khu vực bị phong tỏa. Tể tướng Kadius trực tiếp đứng ra chỉ huy toàn bộ quá trình điều tra.\n\nThế nhưng càng điều tra, sự thật càng trở nên trống rỗng. Người phụ trách ly rượu, một nữ hầu trong cung, cũng biến mất ngay trong đêm đó. Mọi thứ bị cắt đứt một cách sạch sẽ. Không có hung thủ. Không có động cơ. Chỉ có sự biến mất của bằng chứng.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Đêm hôm ấy, Learian đứng cùng Salynya trên ban công cao nhất của hoàng cung. Thành phố phía dưới vẫn sáng đèn, nhưng tất cả đều mang một cảm giác xa xăm. Xa hơn nữa, hồ Selena nằm im lặng giữa sa mạc, phản chiếu ánh trăng như một tấm gương cổ xưa không bao giờ gợn sóng.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "Salynya",
+        text: "“Ngài nghĩ ai là người đứng sau chuyện này?”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Learian không trả lời ngay. Hắn nhìn về phía thành phố rất lâu. Có một cảm giác kỳ lạ đang dần hình thành trong hắn, một cảm giác quen thuộc rất mơ hồ, như thể hắn đã từng chứng kiến một dạng trật tự tương tự ở nơi nào đó, vào một thời điểm không thuộc về hiện tại.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Ta không biết. Nhưng chắc chắn không chỉ có một người.”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Nếu có ai đó đang làm hại vương quốc này… Ta sẽ tìm ra hắn.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Ở phía xa, trong hành lang đá dẫn ra khu vườn hoàng cung, một bóng người đứng lặng dưới ánh đuốc. Gonius không nói gì, khuôn mặt ông bình thản, gần như không có cảm xúc, nhưng ánh mắt lại mang một chiều sâu khó hiểu... Ông không nhìn thế giới như một nơi hỗn loạn, mà như một tiến trình đang đi đúng hướng của nó, dù cái giá phải trả là gì đi nữa.",
+        background: "",
+        character: "assets/characters/tuthe.jpg"
+    },
+    {
+        speaker: "",
+        text: "Những ngày tiếp theo, số người mất tích không những không giảm mà còn tăng lên. Tin đồn về hồ Selena bắt đầu lan rộng trong dân chúng: Người ta nói rằng dưới hồ có một nữ thần mặt trăng đang ngủ yên, những thiếu nữ biến mất là vì được nữ thần chọn lựa. Ai đến gần mặt hồ trong đêm trăng tròn sẽ nghe thấy tiếng thì thầm gọi tên mình.",
+        background: "",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Một đêm, Salynya và Learian cải trang rời khỏi hoàng cung, đến hồ Selena. Dưới ánh trăng, mặt hồ hiện ra như một tấm gương khổng lồ trải giữa sa mạc, tĩnh lặng đến mức phi lý. Rất nhiều thiếu nữ đang đứng quanh hồ. Có người thả hoa xuống nước, có người nhắm mắt cầu nguyện, viết điều ước lên dải lụa trắng rồi thả theo gió. Không gian tràn ngập một thứ niềm tin mỏng manh nhưng mạnh mẽ.",
+        background: "assets/background/hoselena.jpg", // Cảnh nền hồ Selena nếu có
+        character: ""
+    },
+    {
+        speaker: "Learian",
+        text: "“Mọi người thật sự tin điều này sao?”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Có lẽ. Hoặc họ chỉ muốn tin.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Ngay lúc ấy, một cơn gió lạnh bất ngờ thổi qua mặt hồ. Mặt nước khẽ rung động. Trong khoảnh khắc rất ngắn, Learian cảm nhận được một thứ gì đó từ sâu dưới đáy hồ. Không phải âm thanh, mà là một loại tồn tại mơ hồ, như một nhịp đập không thuộc về thế giới này. Nó xuất hiện rồi biến mất ngay lập tức.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Ngươi sao vậy?”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Không có gì.”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Những ngày sau đó, các vụ mất tích tiếp tục xảy ra với tốc độ ngày càng nhanh. Giữa lúc ấy, Japhah xuất hiện trong nhóm điều tra. Ông là quản gia hoàng cung, người phụ trách phần lớn công việc nội vụ. Trong mắt người khác, Japhah là người điềm tĩnh, cẩn trọng, luôn hoàn thành công việc một cách chính xác. Không ai xem ông là bất thường, nhưng Learian thì có. Vì ánh mắt của ông đôi khi dừng lại trên một người quá lâu: Katisah. Một lần. Rồi hai lần. Rồi nhiều lần hơn.",
+        background: "assets/background/hoangcung.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Mọi thứ tiếp tục cho đến một đêm cuối tháng. Tiếng báo động vang lên trong hoàng cung: “Phát hiện thi thể!”.\n\nKhi đoàn người đến hiện trường, thi thể đầu tiên là Japhah, nằm dưới chân một vách đá gần hồ Selena. Không có dấu hiệu giao tranh. Nhưng chỉ một lát sau, một thi thể thứ hai được phát hiện cách đó không xa: Katisah. Bà nằm đó, đôi mắt mở to như thể đã nhìn thấy điều gì đó vượt ngoài khả năng hiểu của con người trước khi chết. Hai cái chết trong cùng một đêm, hai con người không có mối liên hệ rõ ràng nhưng lại xuất hiện cùng một điểm kết thúc.",
+        background: "assets/background/hoselena.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Trong lúc hỗn loạn, Salynya phát hiện một vật nhỏ nằm dưới lớp cát gần thi thể. Một sợi dây chuyền bạc có mặt hình mặt trăng khuyết. Không có dấu hiệu nhận diện, chỉ có sự tồn tại của nó ở nơi không nên tồn tại. Salynya siết nhẹ sợi dây trong tay. Phía xa, hồ Selena vẫn tĩnh lặng như mọi khi. Nhưng lần này, sự tĩnh lặng ấy giống như một sự chờ đợi...",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    
+    // Đánh dấu kích hoạt lượt suy luận đoán Boss phụ Chương 3
+    {
+        triggerDuanBoss3: true
+    }
