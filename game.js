@@ -191,3 +191,129 @@ function showScene() {
 
 // KÍCH HOẠT CẢNH ĐẦU TIÊN KHI VÀO GAME
 showScene();
+// --- HÀM SHOWSCENE KIỂM TRA ĐIỀU KIỆN CHUYỂN CẢNH ---
+function showScene() {
+    let scene = story[current];
+
+    // Chốt chặn Chương 2
+    if (scene.triggerDuanBoss) {
+        openDuanBossPanel();
+        return;
+    }
+
+    // Chốt chặn Chương 3
+    if (scene.triggerDuanBoss3) {
+        openDuanBoss3Panel();
+        return;
+    }
+
+    // 🔥 Chốt chặn Chương 4 (Nằm gọn bên trong showScene)
+    if (scene.triggerDuanBoss4) {
+        openDuanBoss4Panel();
+        return;
+    }
+
+    // --- Logic hiển thị hình ảnh, chữ thoại, âm thanh giữ nguyên ở đây ---
+    speaker.textContent = scene.speaker;
+    text.textContent = scene.text;
+
+    if (scene.speaker && scene.speaker !== "") {
+        bgm.volume = 0.2;
+    } else {
+        bgm.volume = 0.4;
+    }
+
+    if (currentVoice) currentVoice.pause();
+    currentVoice = new Audio(`assets/voice_${current}.mp3`);
+    currentVoice.volume = 0.9;
+    currentVoice.play().catch(e => console.log("Chờ người chơi tương tác"));
+
+    if (scene.background && scene.background !== "") {
+        background.style.backgroundImage = `url('${scene.background}')`;
+    }
+
+    if (scene.character && scene.character !== "") {
+        character.src = scene.character;
+        character.style.display = "block";
+    } else {
+        character.style.display = "none";
+    }
+}
+
+// KÍCH HOẠT CẢNH ĐẦU TIÊN KHI VÀO GAME
+showScene();
+
+
+// ========================================================
+//   CÁC HÀM XỬ LÝ MINI-GAME SUY LUẬN (NẰM DƯỚI SHOWSCENE)
+// ========================================================
+
+// Hàm suy luận Chương 2 (Sahkar)
+function openDuanBossPanel() {
+    // ... code Chương 2 của hai ...
+}
+
+// Hàm suy luận Chương 3 (Cả hai)
+function openDuanBoss3Panel() {
+    // ... code Chương 3 tụi mình vừa làm ...
+}
+
+// Hàm suy luận Chương 4 (Chưa đủ dữ kiện - Dán ở dưới cùng file)
+function openDuanBoss4Panel() {
+    nextBtn.style.display = "none"; 
+    
+    text.innerHTML = `
+        <p style="color: #FF4C29; font-weight: bold; font-size: 24px; margin-bottom: 15px;">[LƯỢT SUY LUẬN 3] Ai là người đáng nghi nhất phía sau những lời đồn về hồ Selena?</p>
+        <p style="font-size: 16px; color: #ccc; margin-bottom: 15px;">Hãy suy luận cẩn thận dựa trên các bằng chứng hiện tại và nhập câu trả lời của bạn:</p>
+        <input type="text" id="boss4Input" placeholder="Nhập tên nhân vật hoặc nhận định của bạn..." style="width: 70%; padding: 10px; font-size: 18px; border-radius: 4px; border: none; margin-bottom: 15px; color: black;"><br>
+        <button id="submitBoss4Btn" style="padding: 10px 30px; font-size: 18px; background: #FFD369; color: black; border: none; font-weight: bold; cursor: pointer; border-radius: 4px;">Xác nhận suy luận</button>
+        <div id="result4Message" style="margin-top: 15px; font-weight: bold; font-size: 18px; line-height: 1.5;"></div>
+    `;
+
+    document.getElementById("submitBoss4Btn").addEventListener("click", () => {
+        let answer = document.getElementById("boss4Input").value.trim().toLowerCase();
+        let resultDiv = document.getElementById("result4Message");
+
+        let correctKeywords = ["chưa đủ dữ kiện", "chua du du kien", "chưa đủ bằng chứng", "chua du bang chung", "chưa đủ", "chua du"];
+        let isCorrect = correctKeywords.some(keyword => answer === keyword || answer.includes(keyword));
+
+        if (isCorrect) {
+            if (!playerInventory.includes("Nhẫn đá mặt trăng")) {
+                playerInventory.push("Nhẫn đá mặt trăng");
+            }
+            resultDiv.style.color = "#4E9F3D";
+            resultDiv.innerHTML = `
+                <div style="margin: 15px 0; text-align: center;">
+                    <img src="assets/vatpham_3.jpg" alt="Nhẫn đá mặt trăng" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; box-shadow: 0 0 10px #FFD369;">
+                </div>
+                🎉 QUÁ TỈNH TÁO! Đáp án chính xác là CHƯA ĐỦ DỮ KIỆN. Bạn đã không bị đánh lừa bởi những tin đồn hướng về Hoàng hậu hay mẹ con Lussyh. Sự cẩn trọng này đã cứu bạn!<br>
+                🎁 Bạn nhận được [Manh mối số 3: Nhẫn đá mặt trăng của Hoàng hậu]. Hệ thống đang chuẩn bị mở ra Chương 5...
+            `;
+            
+            setTimeout(() => {
+                nextBtn.style.display = "block";
+                text.textContent = "Bạn đã vượt qua Lượt suy luận xuất sắc! Hãy ấn Tiếp tục để bước vào Chương 5.";
+            }, 8000);
+
+        } else {
+            userStars--;
+            wrongAnswersCount++;
+            updateStars();
+            resultDiv.style.color = "#D82148";
+
+            if (wrongAnswersCount >= 3) {
+                resultDiv.innerHTML = `❌ Bạn đã đoán sai do vội vàng kết án! Trừ 1 ⭐. Số lần sai đã đạt ${wrongAnswersCount}/3. BẠN PHẢI CHƠI LẠI TRÒ CHƠI TỪ ĐẦU!`;
+                setTimeout(() => { location.reload(); }, 5000);
+            } else {
+                resultDiv.innerHTML = `
+                    ❌ Đoán sai rồi! Bạn bị trừ 1 ⭐ (Còn ${userStars} ⭐) vì đã vội tin vào những suy đoán vô căn cứ.<br>
+                    📖 Bạn đã bỏ lỡ manh mối quan trọng từ Hoàng tộc. Hệ thống tự động chuyển qua màn tiếp theo...
+                `;
+                setTimeout(() => {
+                    nextBtn.style.display = "block";
+                    text.textContent = "Hệ thống tự động bỏ qua lượt suy luận. Chuẩn bị bước vào Chương 5.";
+                }, 7000);
+            }
+        }
+    });
+}
