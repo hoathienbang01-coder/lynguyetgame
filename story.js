@@ -3,8 +3,9 @@ const story = [
     //                 CHƯƠNG 1
     // ==========================================
     {
+        chapter: "Chương 1: Lữ khách đến từ phương xa", // Kích hoạt Intro Chương 1
         speaker: "",
-        text: "Chương 1: Lữ khách đến từ phương xa\n\nMặt trời phương Tây đang dần chìm xuống phía sau những đụn cát vàng bất tận. Ánh chiều tà nhuộm cả chân trời thành một màu hổ phách rực rỡ, trải dài trên những mái vòm bằng đá trắng của kinh thành Ai Cập cổ đại. Từ xa nhìn lại, vương quốc tựa như một viên ngọc vàng được các vị thần cẩn thận đặt giữa biển cát vô tận, vừa hùng vĩ vừa cổ kính, mang trong mình vẻ đẹp khiến bất cứ lữ khách nào cũng phải ngẩn ngơ khi lần đầu đặt chân đến. Con đường dẫn vào kinh thành đông đúc hơn thường lệ. Những người buôn bán đang tranh thủ dọn hàng trước khi trời tối. Tiếng trẻ nhỏ nô đùa hòa lẫn với tiếng lạc đà kéo hàng và những lời chào hỏi quen thuộc vang lên khắp nơi. Thế nhưng khi đoàn thương buôn từ phương Tây xuất hiện ở cuối con đường lớn, bầu không khí nhộn nhịp ấy dường như lặng đi trong thoáng chốc. Người dân hai bên đường không hề tỏ ra thù địch, họ chỉ lặng lẽ quan sát, những ánh mắt hiếu kỳ xen lẫn dè chừng âm thầm hướng về phía đoàn người ngoại quốc đang tiến vào thành. Vài đứa trẻ định chạy lại gần xem những cỗ xe chở đầy hàng hóa kỳ lạ, nhưng rất nhanh đã bị cha mẹ kéo về phía sau. Một vài người phụ nữ khẽ ghé sát tai nhau thì thầm điều gì đó rồi nhanh chóng quay đi. Đối với vùng đất được dòng sông Nile nuôi dưỡng qua hàng ngàn năm lịch sử này, người ngoại lai luôn là một sự tồn tại đặc biệt, họ mang theo những câu chuyện từ những vùng đất chưa từng được biết đến, mang theo những nền văn minh xa lạ, mang theo cả những điều khiến con người vừa tò mò vừa bất an.",
+        text: "Mặt trời phương Tây đang dần chìm xuống phía sau những đụn cát vàng bất tận. Ánh chiều tà nhuộm cả chân trời thành một màu hổ phách rực rỡ, trải dài trên những mái vòm bằng đá trắng của kinh thành Ai Cập cổ đại. Từ xa nhìn lại, vương quốc tựa như một viên ngọc vàng được các vị thần cẩn thận đặt giữa biển cát vô tận, vừa hùng vĩ vừa cổ kính, mang trong mình vẻ đẹp khiến bất cứ lữ khách nào cũng phải ngẩn ngơ khi lần đầu đặt chân đến. Con đường dẫn vào kinh thành đông đúc hơn thường lệ. Những người buôn bán đang tranh thủ dọn hàng trước khi trời tối. Tiếng trẻ nhỏ nô đùa hòa lẫn với tiếng lạc đà kéo hàng và những lời chào hỏi quen thuộc vang lên khắp nơi. Thế nhưng khi đoàn thương buôn từ phương Tây xuất hiện ở cuối con đường lớn, bầu không khí nhộn nhịp ấy dường như lặng đi trong thoáng chốc. Người dân hai bên đường không hề tỏ ra thù địch, họ chỉ lặng lẽ quan sát, những ánh mắt hiếu kỳ xen lẫn dè chừng âm thầm hướng về phía đoàn người ngoại quốc đang tiến vào thành. Vài đứa trẻ định chạy lại gần xem những cỗ xe chở đầy hàng hóa kỳ lạ, nhưng rất nhanh đã bị cha mẹ kéo về phía sau. Một vài người phụ nữ khẽ ghé sát tai nhau thì thầm điều gì đó rồi nhanh chóng quay đi. Đối với vùng đất được dòng sông Nile nuôi dưỡng qua hàng ngàn năm lịch sử này, người ngoại lai luôn là một sự tồn tại đặc biệt, họ mang theo những câu chuyện từ những vùng đất chưa từng được biết đến, mang theo những nền văn minh xa lạ, mang theo cả những điều khiến con người vừa tò mò vừa bất an.",
         background: "assets/background/toanvuongquoc.jpg",
         character: ""
     },
@@ -34,7 +35,7 @@ const story = [
     },
     {
         speaker: "",
-        text: "But người thu hút nhiều ánh nhìn nhất lại là Learian, chàng đứng phía sau đoàn người, một tay đặt lên hành lý, đôi mắt màu xanh sâu thẳm lặng lẽ nhìn ngắm thành phố trước mặt...",
+        text: "Nhưng người thu hút nhiều ánh nhìn nhất lại là Learian, chàng đứng phía sau đoàn người, một tay đặt lên hành lý, đôi mắt màu xanh sâu thẳm lặng lẽ nhìn ngắm thành phố trước mặt...",
         background: "",
         character: "assets/characters/learian.jpg"
     },
@@ -211,8 +212,9 @@ const story = [
     //                 CHƯƠNG 2
     // ==========================================
     {
+        chapter: "Chương 2: Bóng đêm của đứa con Ai Cập", // Kích hoạt Intro Chương 2
         speaker: "",
-        text: "CHƯƠNG 2: Bóng đêm của đứa con Ai Cập\n\nNhững ngày sau cuộc gặp gỡ đầu tiên, Learian dần trở thành vị khách quen thuộc trong hoàng cung. Ban đầu, sự xuất hiện của hắn chỉ gói gọn trong những cuộc trò chuyện ngắn tại thư viện hoàng gia cùng Công chúa Salynya, nơi ánh sáng xuyên qua những khung cửa đá cao đổ xuống từng trang sách cổ, tạo thành những vệt sáng dài trầm mặc như thời gian bị kéo giãn. Nhưng theo thời gian, những cuộc gặp ấy không còn dừng lại ở vài lời trao đổi đơn thuần nữa. Chúng dần kéo dài thành những buổi đi dạo dưới hàng cột đá trắng của hoàng cung, nơi gió sa mạc thổi qua mang theo hơi nóng khô và mùi cát xa xăm...",
+        text: "Những ngày sau cuộc gặp gỡ đầu tiên, Learian dần trở thành vị khách quen thuộc trong hoàng cung. Ban đầu, sự xuất hiện của hắn chỉ gói gọn trong những cuộc trò chuyện ngắn tại thư viện hoàng gia cùng Công chúa Salynya, nơi ánh sáng xuyên qua những khung cửa đá cao đổ xuống từng trang sách cổ, tạo thành những vệt sáng dài trầm mặc như thời gian bị kéo giãn. Nhưng theo thời gian, những cuộc gặp ấy không còn dừng lại ở vài lời trao đổi đơn thuần nữa. Chúng dần kéo dài thành những buổi đi dạo dưới hàng cột đá trắng của hoàng cung, nơi gió sa mạc thổi qua mang theo hơi nóng khô và mùi cát xa xăm...",
         background: "assets/background/hoangcung.jpg", 
         character: ""
     },
@@ -242,13 +244,13 @@ const story = [
     },
     {
         speaker: "",
-        text: "Ở phía sau ngai vàng, Tể tướng Kadius luôn đứng trong vị trí quen violent của mình. Khuôn mặt ông mang những đường nét khắc nghiệt của thời gian và trách nhiệm, ánh mắt luôn quan sát nhiều hơn là phản ứng... Đối lập hoàn toàn với ông là Tư tế Gonius - người đứng gần nhất với thần điện, luôn xuất hiện đúng lúc, luôn nói đúng điều cần nói. Không ai nghi ngờ ông.",
+        text: "Ở phía sau ngai vàng, Tể tướng Kadius luôn đứng trong vị trí quen thuộc của mình. Khuôn mặt ông mang những đường nét khắc nghiệt của thời gian và trách nhiệm, ánh mắt luôn quan sát nhiều hơn là phản ứng... Đối lập hoàn toàn với ông là Tư tế Gonius - người đứng gần nhất với thần điện, luôn xuất hiện đúng lúc, luôn nói đúng điều cần nói. Không ai nghi ngờ ông.",
         background: "",
         character: "assets/characters/tute.jpg"
     },
     {
         speaker: "",
-        text: "Cho đến đêm thứ mười lăm kể từ khi đoàn thương nhân đặt chân đến Ai Cập. Một nữ hầu trong cung điện biến mất. Không tiếng động. Không dấu vết. Không một lời kêu cứu. Ban đầu, sự việc được xem như một trường hợp cá biệt... Nhưng rồi người thứ hai biến mất. Người thứ ba. Người thứ tư. Tất cả đều là nữ. Tất cả đều trẻ. Tất cả biến mất trong đêm.",
+        text: "Cho đến đêm thứ mười lăm kể từ khi đoàn thương nhân đặt chân đến Ai Cập. Một nữ hầu trong cung điện biến mất. Không tiếng động. Không dấu vết. Không một lời kêu cứu. Ban đầu, sự việc được xem như một trường hợp cá biệt... Nhưng rồi người thứ hai biến mất. Người thứ ba. Người thứ quan. Tất cả đều là nữ. Tất cả đều trẻ. Tất cả biến mất trong đêm.",
         background: "",
         character: ""
     },
@@ -272,7 +274,7 @@ const story = [
     },
     {
         speaker: "",
-        text: "But trước khi cuộc điều tra có thể tiến xa hơn, một biến cố khác xảy ra mạnh hơn, trực diện hơn: Rượu của Pharaoh bị đầu độc! Sự việc chỉ bị ngăn lại trong khoảnh khắc cuối cùng khi Salynya nhận ra sự thay đổi rất nhỏ trong phản xạ ánh sáng trên chiếc ly bạc. Ngay lập tức, toàn bộ khu vực bị phong tỏa.",
+        text: "Nhưng trước khi cuộc điều tra có thể tiến xa hơn, một biến cố khác xảy ra mạnh hơn, trực diện hơn: Rượu của Pharaoh bị đầu độc! Sự việc chỉ bị ngăn lại trong khoảnh khắc cuối cùng khi Salynya nhận ra sự thay đổi rất nhỏ trong phản xạ ánh sáng trên chiếc ly bạc. Ngay lập tức, toàn bộ khu vực bị phong tỏa.",
         background: "",
         character: ""
     },
@@ -320,8 +322,9 @@ const story = [
     //                 CHƯƠNG 3
     // ==========================================
     {
+        chapter: "Chương 3: Lời thì thầm bên hồ Selena", // Kích hoạt Intro Chương 3
         speaker: "",
-        text: "CHƯƠNG 3: LỜI THÌ THẦM BÊN HỒ SELENA\n\nSau vụ đầu độc bất thành nhằm vào Pharaoh, bầu không khí trong hoàng cung không còn giữ được vẻ yên ổn như trước. Mọi thứ vẫn vận hành theo đúng quỹ đạo của nó... Nhưng phía sau lớp vỏ bình thường ấy, một cảm giác bất an không tên đã bắt đầu len lỏi, như một vết nứt rất nhỏ trong nền đá cổ, chưa vỡ ra nhưng đã đủ để khiến người ta không thể làm ngơ. Những vụ mất tích vẫn chưa dừng lại. Người đầu tiên biến mất is một tỳ nữ trong cung. Người thứ hai là một cô gái làm việc tại khu chợ phía Nam. Người thứ ba là một nữ tu tập sự trong đền thờ. Không ai tìm được tung tích của họ. Không nhân chứng, không thi thể, không dấu vết.",
+        text: "Sau vụ đầu độc bất thành nhằm vào Pharaoh, bầu không khí trong hoàng cung không còn giữ được vẻ yên ổn như trước. Mọi thứ vẫn vận hành theo đúng quỹ đạo của nó... Nhưng phía sau lớp vỏ bình thường ấy, một cảm giác bất an không tên đã bắt đầu len lỏi, như một vết nứt rất nhỏ trong nền đá cổ, chưa vỡ ra nhưng đã đủ để khiến người ta không thể làm ngơ. Những vụ mất tích vẫn chưa dừng lại. Người đầu tiên biến mất là một tỳ nữ trong cung. Người thứ hai là một cô gái làm việc tại khu chợ phía Nam. Người thứ ba là một nữ tu tập sự trong đền thờ. Không ai tìm được tung tích của họ. Không nhân chứng, không thi thể, không dấu vết.",
         background: "assets/background/hoangcung.jpg",
         character: ""
     },
@@ -453,8 +456,9 @@ const story = [
     //                 CHƯƠNG 4
     // ==========================================
     {
+        chapter: "Chương 4: Những đóa hoa dưới ánh trăng", // Kích hoạt Intro Chương 4
         speaker: "",
-        text: "CHƯƠNG 4: NHỮNG ĐÓA HOA DƯỚI ÁNH TRĂNG\n\nSau cái chết của Katisah và Japhah, cuộc điều tra rơi vào một khoảng lặng kỳ lạ. Không phải sự kết thúc, mà là một dạng ngưng trệ như thể mọi sợi dây vừa bị kéo căng đến cực hạn rồi đột ngột bị thả lỏng... Duy chỉ còn lại sợi dây chuyền mặt trăng nằm trong tay Salynya, lạnh và im lặng, như một dấu vết bị bỏ quên giữa dòng sự kiện đang dần trở nên rối loạn. Không ai xác nhận được nó thuộc về ai. Nhưng điều khiến Salynya không thể buông bỏ không phải là cái chết đã xảy ra, mà là những vụ mất tích vẫn tiếp tục. Không có dấu hiệu dừng lại.",
+        text: "Sau cái chết của Katisah and Japhah, cuộc điều tra rơi vào một khoảng lặng kỳ lạ. Không phải sự kết thúc, mà là một dạng ngưng trệ như thể mọi sợi dây vừa bị kéo căng đến cực hạn rồi đột ngột bị thả lỏng... Duy chỉ còn lại sợi dây chuyền mặt trăng nằm trong tay Salynya, lạnh và im lặng, như một dấu vết bị bỏ quên giữa dòng sự kiện đang dần trở nên rối loạn. Không ai xác nhận được nó thuộc về ai. Nhưng điều khiến Salynya không thể buông bỏ không phải là cái chết đã xảy ra, mà là những vụ mất tích vẫn tiếp tục. Không có dấu hiệu dừng lại.",
         background: "assets/background/hoangcung.jpg",
         character: ""
     },
@@ -550,8 +554,9 @@ const story = [
     //                 CHƯƠNG 5
     // ==========================================
     {
+        chapter: "Chương 5: Lời chúc phúc cuối cùng", // Kích hoạt Intro Chương 5
         speaker: "",
-        text: "CHƯƠNG 5: LỜI CHÚC PHÚC CUỐI CÙNG\n\nNhững ngày đầu mùa hạ tràn qua Ai Cập bằng thứ hơi nóng khô rát của sa mạc... Vương quốc lại đang bước vào một trạng thái bất ổn không ai gọi tên được, khi số người mất tích tăng lên theo cách không còn giống một chuỗi sự kiện rời rạc mà giống như từng mắt xích của một cơ chế đang dần khép lại. Hồ Selena vẫn lặng, nhưng chính sự bình lặng đó lại khiến nó trở nên đáng ngờ hơn, như thể mọi thứ bên dưới đang chờ một thời điểm thích hợp để trồi lên cùng lúc.",
+        text: "Những ngày đầu mùa hạ tràn qua Ai Cập bằng thứ hơi nóng khô rát của sa mạc... Vương quốc lại đang bước vào một trạng thái bất ổn không ai gọi tên được, khi số người mất tích tăng lên theo cách không còn giống một chuỗi sự kiện rời rạc mà giống như từng mắt xích của một cơ chế đang dần khép lại. Hồ Selena vẫn lặng, nhưng chính sự bình lặng đó lại khiến nó trở nên đáng ngờ hơn, như thể mọi thứ bên dưới đang chờ một thời điểm thích hợp để trồi lên cùng lúc.",
         background: "assets/background/toanvuongquoc.jpg",
         character: ""
     },
@@ -665,8 +670,9 @@ const story = [
     //                 CHƯƠNG 6
     // ==========================================
     {
+        chapter: "Chương 6: Lời nguyền của những kẻ ngoại lai", // Kích hoạt Intro Chương 6
         speaker: "",
-        text: "CHƯƠNG 6: LỜI NGUYỀN CỦA NHỮNG KẺ NGOẠI LAI\n\nCái chết của Lussahna không khép lại bi kịch, nó chỉ khiến bi kịch chuyển sang một dạng tồn tại khác, lặng hơn, dai hơn. Trong hoàng cung, Salynya không còn xuất hiện với dáng vẻ điềm tĩnh quen thuộc, nàng tự nhốt mình trong thư phòng giữa những bản điều tra chồng chất như một mê cung không lối thoát. Learian ở bên nàng như một điểm tựa im lặng, cùng nàng ghép lại những mảnh vỡ của một sự thật đang dần trở nên quá lớn.",
+        text: "Cái chết của Lussahna không khép lại bi kịch, nó chỉ khiến bi kịch chuyển sang một dạng tồn tại khác, lặng hơn, dai hơn. Trong hoàng cung, Salynya không còn xuất hiện với dáng vẻ điềm tĩnh quen thuộc, nàng tự nhốt mình trong thư phòng giữa những bản điều tra chồng chất như một mê cung không lối thoát. Learian ở bên nàng như một điểm tựa im lặng, cùng nàng ghép lại những mảnh vỡ của một sự thật đang dần trở nên quá lớn.",
         background: "assets/background/hoangcung.jpg",
         character: ""
     },
@@ -708,6 +714,7 @@ const story = [
     //                 CHƯƠNG 7
     // ==========================================
     {
+        chapter: "Chương 7: Tế đàn dưới ánh trăng", // Kích hoạt Intro Chương 7
         speaker: "Hệ thống",
         text: "✨ CHÀO MỪNG BẠN ĐẾN VỚI CHƯƠNG 7: TẾ ĐÀN DƯỚI ÁNH TRĂNG ✨",
         background: "assets/background/hoselena.jpg",
@@ -787,7 +794,7 @@ const story = [
     },
     {
         speaker: "Salynya",
-        text: "“If I stay... those souls will never be able to leave the darkness. Don't look for me.”",
+        text: "“Nếu ta ở lại... những linh hồn đó sẽ không bao giờ có thể rời khỏi bóng tối. Đừng tìm ta.”", // Sửa thành tiếng Việt nghệ thuật
         background: "",
         character: "assets/characters/salynya.jpg"
     },
