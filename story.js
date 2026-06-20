@@ -312,7 +312,7 @@ const story = [
         speaker: "",
         text: "Ở phía xa đại điện, dưới ánh đuốc vàng, Tư tế Gonius đứng lặng nhìn thành phố. Khuôn mặt ông bình thản như mọi ngày, ánh mắt phản chiếu ánh sáng như thể đang nhìn thấy một trật tự sâu hơn toàn bộ những gì đang diễn ra. Và ở nơi sâu nhất dưới hồ Selena, một thứ gì đó khẽ phản ứng lại ánh trăng...",
         background: "",
-        character: "assets/characters/tuthe.jpg"
+        character: "assets/characters/tute.jpg"
     },
     
     // Đánh dấu đây là kết thúc Chương 2 để kích hoạt Mini-game
@@ -384,7 +384,7 @@ const story = [
         speaker: "",
         text: "Ở phía xa, trong hành lang đá dẫn ra khu vườn hoàng cung, một bóng người đứng lặng dưới ánh đuốc. Gonius không nói gì, khuôn mặt ông bình thản, gần như không có cảm xúc, nhưng ánh mắt lại mang một chiều sâu khó hiểu... Ông không nhìn thế giới như một nơi hỗn loạn, mà như một tiến trình đang đi đúng hướng của nó, dù cái giá phải trả là gì đi nữa.",
         background: "",
-        character: "assets/characters/tuthe.jpg"
+        character: "assets/characters/tute.jpg"
     },
     {
         speaker: "",
