@@ -3,7 +3,10 @@ let userStars = 5;
 let playerInventory = []; 
 let wrongAnswersCount = 0; 
 let gameStarted = false; 
-let isPaused = false; // Biến kiểm tra trạng thái tạm dừng
+let isPaused = false; 
+
+// Biến toàn cục để khóa và giữ hình nền không bao giờ bị đen
+let lastValidBackground = ""; 
 
 // Khai báo nhạc nền
 const bgm = new Audio("assets/bgm.mp3"); 
@@ -15,16 +18,14 @@ const text = document.getElementById("text");
 const character = document.getElementById("character");
 const background = document.getElementById("background");
 const nextBtn = document.getElementById("nextBtn");
-const pauseBtn = document.getElementById("pauseBtn"); // Nút tạm dừng mới
+const pauseBtn = document.getElementById("pauseBtn");
 
-// Giao diện ban đầu cho nút mở màn
 if (nextBtn) {
     nextBtn.textContent = "🎮 BẮT ĐẦU GAME";
     nextBtn.style.background = "#FF4C29";
-    nextBtn.style.color = "white";
+    nextBtn.style.color = white;
 }
 
-// Tạo giao diện hiển thị số sao lên góc màn hình
 const starDisplay = document.createElement("div");
 starDisplay.style = "position:absolute; top:20px; left:20px; color:#FFD369; font-size:24px; font-weight:bold; z-index:100; text-shadow: 2px 2px black;";
 starDisplay.innerHTML = "⭐ ".repeat(userStars);
@@ -37,25 +38,23 @@ function updateStars() {
 // --- LOGIC NÚT TẠM DỪNG GAME ---
 if (pauseBtn) {
     pauseBtn.addEventListener("click", () => {
-        if (!gameStarted) return; // Chưa bắt đầu game thì không cho dừng
+        if (!gameStarted) return; 
         
         if (!isPaused) {
-            // Thực hiện Tạm dừng
             isPaused = true;
             pauseBtn.textContent = "▶️ TIẾP TỤC CHƠI";
             pauseBtn.style.background = "#4E9F3D";
-            nextBtn.style.pointerEvents = "none"; // Khóa không cho bấm Tiếp tục truyện
+            nextBtn.style.pointerEvents = "none"; 
             nextBtn.style.opacity = "0.5";
-            bgm.pause(); // Tắt nhạc nền
-            if (currentVoice) currentVoice.pause(); // Tắt voice nhân vật
+            bgm.pause(); 
+            if (currentVoice) currentVoice.pause(); 
         } else {
-            // Thực hiện Chơi tiếp
             isPaused = false;
             pauseBtn.textContent = "⏸️ TẠM DỪNG";
             pauseBtn.style.background = "#FF4C29";
-            nextBtn.style.pointerEvents = "auto"; // Mở khóa nút đi tiếp
+            nextBtn.style.pointerEvents = "auto"; 
             nextBtn.style.opacity = "1";
-            bgm.play().catch(e => console.log("Lỗi phát nhạc")); // Bật lại nhạc
+            bgm.play().catch(e => console.log("Lỗi phát nhạc")); 
             if (currentVoice) currentVoice.play().catch(e => console.log("Lỗi phát voice"));
         }
     });
@@ -65,36 +64,34 @@ if (pauseBtn) {
 function showScene() {
     let scene = story[current];
 
-    // Chốt chặn kích hoạt panel câu hỏi
     if (scene.triggerDuanBoss) { openDuanBossPanel(); return; }
     if (scene.triggerDuanBoss3) { openDuanBoss3Panel(); return; }
     if (scene.triggerDuanBoss4) { openDuanBoss4Panel(); return; }
     if (scene.triggerDuanBoss5) { openDuanBoss5Panel(); return; }
     if (scene.triggerDuanBoss6) { openDuanBoss6Panel(); return; }
 
-    // Hiển thị nội dung chữ
     speaker.textContent = scene.speaker || "";
     text.textContent = scene.text || "";
 
-    // Tự động chỉnh âm lượng nhạc nền
     if (scene.speaker && scene.speaker !== "") {
         bgm.volume = 0.2; 
     } else {
         bgm.volume = 0.4; 
     }
 
-    // Xử lý giọng lồng tiếng (Voice)
     if (currentVoice) currentVoice.pause();
     currentVoice = new Audio(`assets/voice_${current}.mp3`);
     currentVoice.volume = 0.9;
     currentVoice.play().catch(e => console.log("Chờ tương tác phát voice"));
 
-    // SỬA LỖI MẤT BACKGROUND: Nếu cảnh này có nền mới thì đổi, nếu trống "" thì giữ nguyên nền cũ chứ không xóa
-    if (scene.background && scene.background !== "") {
-        background.style.backgroundImage = `url('${scene.background}')`;
+    // 🔥 SỬA LỖI MẤT NỀN: Ép giữ nền cũ nếu cảnh mới không khai báo nền hợp lệ
+    if (scene.background && scene.background.trim() !== "") {
+        lastValidBackground = `url('${scene.background}')`;
+        background.style.backgroundImage = lastValidBackground;
+    } else if (lastValidBackground !== "") {
+        background.style.backgroundImage = lastValidBackground;
     }
 
-    // Ẩn/hiện nhân vật
     if (scene.character && scene.character !== "") {
         character.src = scene.character;
         character.style.display = "block";
@@ -103,9 +100,8 @@ function showScene() {
     }
 }
 
-// LẮNG NGHE SỰ KIỆN BẤM NÚT ĐI TIẾP
 nextBtn.addEventListener("click", () => {
-    if (isPaused) return; // Đang tạm dừng thì không cho chạy tiếp
+    if (isPaused) return; 
 
     if (!gameStarted) {
         gameStarted = true;
@@ -131,18 +127,16 @@ nextBtn.addEventListener("click", () => {
     showScene();
 });
 
-// Thiết lập trạng thái màn hình chờ ban đầu lúc chưa ấn Start
 speaker.textContent = "Hệ thống";
 text.textContent = "Chào mừng bạn đến với trò chơi cốt truyện tương tác Ai Cập Cổ Đại. Hãy nhấn nút phía dưới để kích hoạt hành trình bí ẩn!";
 
 
 // ========================================================
-//   CÁC HÀM XỬ LÝ MINI-GAME SUY LUẬN ĐOÁN BOSS
+//   CÁC HÀM XỬ LÝ MINI-GAME SUY LUẬN ĐOÁN BOSS + HIỆN ẢNH VẬT PHẨM
 // ========================================================
 
 function openDuanBossPanel() {
     nextBtn.style.display = "none";
-    // ĐÃ ĐỔI PLACEHOLDER THEO Ý HAI: Không còn lộ tên Sahkar nữa!
     text.innerHTML = `
         <p style="color: #FF4C29; font-weight: bold; font-size: 24px; margin-bottom: 15px;">[LƯỢT SUY LUẬN 1] Ai là người hạ độc Pharaoh?</p>
         <input type="text" id="bossInput" placeholder="Viết cái tên hoặc thân phận bạn nghi ngờ..." style="width: 70%; padding: 10px; font-size: 18px; border-radius: 4px; border: none; margin-bottom: 15px; color: black;"><br>
@@ -159,8 +153,15 @@ function openDuanBossPanel() {
         if (isCorrect) {
             if (!playerInventory.includes("Lọ pha lê tím nạm vàng")) playerInventory.push("Lọ pha lê tím nạm vàng");
             resultDiv.style.color = "#4E9F3D";
-            resultDiv.innerHTML = `🎉 CHÍNH XÁC! Bạn nhận được 🎁 [Manh mối: Lọ pha lê tím nạm vàng]. Chuẩn bị bước vào Chương 3...`;
-            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
+            // ĐÃ THÊM ẢNH VẬT PHẨM: Hai nhớ bỏ file ảnh "lo_pha_le.png" vào thư mục assets nha
+            resultDiv.innerHTML = `
+                <div style="text-align: center; margin-top: 10px;">
+                    <p>🎉 CHÍNH XÁC! Bạn nhận được:</p>
+                    <img src="assets/lo_pha_le.png" alt="Lọ pha lê" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; margin: 10px 0; background: rgba(0,0,0,0.5); padding: 5px;"><br>
+                    <span>🎁 <strong>[Manh mối: Lọ pha lê tím nạm vàng]</strong>. Chuẩn bị bước vào Chương 3...</span>
+                </div>
+            `;
+            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 5000);
         } else {
             userStars--; wrongAnswersCount++; updateStars(); resultDiv.style.color = "#D82148";
             if (wrongAnswersCount >= 3) { resultDiv.innerHTML = `❌ Sai rồi! Bạn phải CHƠI LẠI TỪ ĐẦU!`; setTimeout(() => { location.reload(); }, 4000); } 
@@ -186,8 +187,15 @@ function openDuanBoss3Panel() {
         if (isCorrect) {
             if (!playerInventory.includes("Dây chuyền Mặt Trăng")) playerInventory.push("Dây chuyền Mặt Trăng");
             resultDiv.style.color = "#4E9F3D";
-            resultDiv.innerHTML = `🎉 XUẤT SẮC! Đáp án chính xác là CẢ HAI. Nhận được [Manh mối: Dây chuyền Mặt Trăng].`;
-            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
+            // THÊM ẢNH DÂY CHUYỀN MẶT TRĂNG
+            resultDiv.innerHTML = `
+                <div style="text-align: center; margin-top: 10px;">
+                    <p>🎉 XUẤT SẮC! Đáp án chính xác là CẢ HAI. Bạn nhận được:</p>
+                    <img src="assets/day_chuyen.png" alt="Dây chuyền" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; margin: 10px 0; background: rgba(0,0,0,0.5); padding: 5px;"><br>
+                    <span>🎁 <strong>[Manh mối: Dây chuyền Mặt Trăng]</strong>.</span>
+                </div>
+            `;
+            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 5000);
         } else {
             userStars--; wrongAnswersCount++; updateStars(); resultDiv.style.color = "#D82148";
             if (wrongAnswersCount >= 3) { resultDiv.innerHTML = `❌ Game Over! Chơi lại từ đầu.`; setTimeout(() => { location.reload(); }, 4000); } 
@@ -213,8 +221,15 @@ function openDuanBoss4Panel() {
         if (isCorrect) {
             if (!playerInventory.includes("Nhẫn đá mặt trăng")) playerInventory.push("Nhẫn đá mặt trăng");
             resultDiv.style.color = "#4E9F3D";
-            resultDiv.innerHTML = `🎉 QUÁ TỈNH TÁO! Đáp án chính xác là CHƯA ĐỦ DỮ KIỆN. Nhận được [Manh mối: Nhẫn đá mặt trăng].`;
-            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
+            // THÊM ẢNH NHẪN ĐÁ MẶT TRĂNG
+            resultDiv.innerHTML = `
+                <div style="text-align: center; margin-top: 10px;">
+                    <p>🎉 QUÁ TỈNH TÁO! Đáp án chính xác là CHƯA ĐỦ DỮ KIỆN. Bạn nhận được:</p>
+                    <img src="assets/nhan_da.png" alt="Nhẫn đá" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; margin: 10px 0; background: rgba(0,0,0,0.5); padding: 5px;"><br>
+                    <span>🎁 <strong>[Manh mối: Nhẫn đá mặt trăng]</strong>.</span>
+                </div>
+            `;
+            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 5000);
         } else {
             userStars--; wrongAnswersCount++; updateStars(); resultDiv.style.color = "#D82148";
             if (wrongAnswersCount >= 3) { setTimeout(() => { location.reload(); }, 4000); } 
@@ -244,8 +259,15 @@ function openDuanBoss5Panel() {
         if (selected.value === "lussyh") {
             if (!playerInventory.includes("Lời chúc phúc của Lussahna")) playerInventory.push("Lời chúc phúc của Lussahna");
             resultDiv.style.color = "#4E9F3D";
-            resultDiv.innerHTML = `🎉 CHÍNH XÁC! Nhận được [Manh mối: Lời chúc phúc cuối cùng của Lussahna].`;
-            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
+            // THÊM ẢNH LỜI CHÚC PHÚC CỦA LUSSAHNA
+            resultDiv.innerHTML = `
+                <div style="text-align: center; margin-top: 10px;">
+                    <p>🎉 CHÍNH XÁC! Bạn nhận được:</p>
+                    <img src="assets/loi_chuc_phuc.png" alt="Lời chúc phúc" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; margin: 10px 0; background: rgba(0,0,0,0.5); padding: 5px;"><br>
+                    <span>🎁 <strong>[Manh mối: Lời chúc phúc cuối cùng của Lussahna]</strong>.</span>
+                </div>
+            `;
+            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 5000);
         } else {
             userStars--; wrongAnswersCount++; updateStars(); resultDiv.style.color = "#D82148";
             setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
@@ -270,8 +292,15 @@ function openDuanBoss6Panel() {
         if (isCorrect) {
             if (!playerInventory.includes("Bản kế hoạch Rojefh")) playerInventory.push("Bản kế hoạch Rojefh");
             resultDiv.style.color = "#4E9F3D";
-            resultDiv.innerHTML = `🎉 CHÍNH XÁC! Thân phận thật sự là Ông ngoại của công chúa Salynya. Chuẩn bị sang Chương 7!`;
-            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
+            // 🔥 THÊM ẢNH BẢN KẾ HOẠCH ROJEFH
+            resultDiv.innerHTML = `
+                <div style="text-align: center; margin-top: 10px;">
+                    <p>🎉 CHÍNH XÁC! Thân phận thật sự là Ông ngoại của công chúa Salynya. Bạn nhận được:</p>
+                    <img src="assets/ban_ke_hoach.png" alt="Bản kế hoạch" style="width: 120px; height: auto; border: 2px solid #FFD369; border-radius: 8px; margin: 10px 0; background: rgba(0,0,0,0.5); padding: 5px;"><br>
+                    <span>🎁 <strong>[Manh mối: Bản kế hoạch Rojefh]</strong>. Chuẩn bị sang Chương 7!</span>
+                </div>
+            `;
+            setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 5000);
         } else {
             userStars--; wrongAnswersCount++; updateStars(); resultDiv.style.color = "#D82148";
             setTimeout(() => { nextBtn.style.display = "block"; current++; showScene(); }, 4000);
