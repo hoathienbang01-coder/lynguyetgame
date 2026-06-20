@@ -13,8 +13,10 @@ function showScene(){
     speaker.textContent = scene.speaker;
     text.textContent = scene.text;
 
-    background.style.backgroundImage =
-        `url(${scene.background})`;
+    // 🔥 SỬA ĐOẠN NÀY: Chỉ cập nhật ảnh nền nếu dòng thoại đó CÓ khai báo background
+    if (scene.background && scene.background !== "") {
+        background.style.backgroundImage = `url(${scene.background})`;
+    }
 
     if(scene.character){
 
@@ -37,8 +39,9 @@ nextBtn.addEventListener("click",()=>{
 
         current = story.length - 1;
 
-        text.textContent =
-        "Hết bản demo Chương 1.";
+        // Xóa tên người nói khi hết game để đỡ bị kỳ
+        speaker.textContent = ""; 
+        text.textContent = "Hết bản demo Chương 1.";
 
         return;
     }
