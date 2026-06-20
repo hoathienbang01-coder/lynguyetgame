@@ -547,4 +547,123 @@ const story = [
     {
         triggerDuanBoss4: true
     }
-];
+// ================= CHƯƠNG 5 =================
+    {
+        speaker: "",
+        text: "CHƯƠNG 5: LỜI CHÚC PHÚC CUỐI CÙNG\n\nNhững ngày đầu mùa hạ tràn qua Ai Cập bằng thứ hơi nóng khô rát của sa mạc... Vương quốc lại đang bước vào một trạng thái bất ổn không ai gọi tên được, khi số người mất tích tăng lên theo cách không còn giống một chuỗi sự kiện rời rạc mà giống như từng mắt xích của một cơ chế đang dần khép lại. Hồ Selena vẫn lặng, nhưng chính sự bình lặng đó lại khiến nó trở nên đáng ngờ hơn, như thể mọi thứ bên dưới đang chờ một thời điểm thích hợp để trồi lên cùng lúc.",
+        background: "assets/background/toanvuongquoc.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Đúng lúc ấy, đoàn thương nhân từ phương Tây cập bến. Cánh cổng thành mở ra trong tiếng kim loại và bụi đá... Công thức Rohan bước đi với dáng vẻ của một người đã quen đứng giữa quyền lực, phu nhân Lianetta đi bên cạnh ông như một điểm cân bằng mềm mại, còn Learian theo sau, ánh mắt bình thản nhưng không thuộc về nhịp sống nơi đây.",
+        background: "assets/background/haicang.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Giữa những ánh nhìn ấy, Lussahna xuất hiện. Nàng bước ra từ đền thờ với sách trong tay. Cuộc gặp gỡ giữa nàng và Learian xảy ra ở khu chợ phía Nam, khi nàng vô tình bị cuốn vào một tình huống hỗn loạn với vài kẻ buôn người, và Learian xuất hiện đúng lúc, như một sự lệch nhịp nhỏ của số phận.",
+        background: "assets/background/khucho.jpg",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Không sao chứ?”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Lussahna",
+        text: "“Ta… không sao.”",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "",
+        text: "Những ngày sau, Lussahna bắt đầu tìm đến Learian nhiều hơn để hỏi về biển, về những vùng đất không có trong kinh văn... Càng nghe, nàng càng nhận ra thế giới rộng lớn và khác biệt hoàn toàn với cấu trúc niềm tin nàng từng sống. Ranh giới mới được tạo ra, một cảm xúc chưa từng được gọi tên xuất hiện. Dưới bóng cây cọ bên hồ trong cung điện, Lussahna đứng lâu hơn thường lệ.",
+        background: "assets/background/hoavien.jpg",
+        character: ""
+    },
+    {
+        speaker: "Lussahna",
+        text: "“Ta nghĩ… ta thích ngài.”",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "",
+        text: "Learian im lặng. Không phải vì bất ngờ, mà vì hắn hiểu rõ ý nghĩa của khoảnh khắc này hơn bất kỳ ai. Sau cùng, hắn chỉ nói một câu rất ngắn.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Xin lỗi. Trong lòng ta đã có người rồi.”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Không gian không vỡ ra, nhưng có thứ gì đó trong Lussahna dừng lại. Nàng không sụp đổ, chỉ đứng yên rất lâu rồi mỉm cười tổn thương.",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "Lussahna",
+        text: "“Người đó… thật may mắn.”",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "",
+        text: "Ở một nơi khác trong thành phố, Nữ tu trưởng Lussyh nghe được tất cả bằng một thứ cảm giác sâu thẳm, như thể có một sợi dây vô hình kéo ký ức cũ trỗi dậy. Bà ngồi trước tượng nữ thần, gương mặt dao động dưới ánh nến: một người đã từng yêu, và một người đã từng mất. Sự thật đau đớn lặp lại, và lần này, nó mang gương mặt con gái bà.",
+        background: "assets/background/dentho.jpg",
+        character: "assets/characters/lussyh.jpg"
+    },
+    {
+        speaker: "",
+        text: "Trong bóng tối sâu nhất của đền thờ, Lussyh bước xuống một căn phòng bị phong kín. Tư tế Gonius đã ở đó từ trước, như thể đã biết bà sẽ đến.",
+        background: "assets/background/matthat.jpg",
+        character: "assets/characters/tute.jpg" // Sửa chuẩn tute theo đúng file của hai
+    },
+    {
+        speaker: "Gonius",
+        text: "“Ngươi đã suy nghĩ kỹ chưa?”",
+        background: "",
+        character: "assets/characters/tute.jpg"
+    },
+    {
+        speaker: "",
+        text: "Bàn tay Lussyh siết chặt đến trắng bệch.",
+        background: "",
+        character: "assets/characters/lussyh.jpg"
+    },
+    {
+        speaker: "Lussyh",
+        text: "“Ta muốn công chúa biến mất.”",
+        background: "",
+        character: "assets/characters/lussyh.jpg"
+    },
+    {
+        speaker: "Gonius",
+        text: "“Ta hiểu rồi.”",
+        background: "",
+        character: "assets/characters/tute.jpg"
+    },
+    {
+        speaker: "",
+        text: "Vài ngày sau, Salynya biến mất không dấu vết. Hoàng cung rơi vào hỗn loạn tột độ. Trong khi mọi người tìm kiếm vô vọng, Lussahna phát hiện ra toàn bộ cấu trúc sự thật phía sau: Người đứng sau không phải kẻ ngoại lai, mà là mẹ nàng. Không có tiếng vỡ, chỉ có sự đổ sụp hoàn toàn bên trong. Lussahna chạy trong màn đêm, lao vào khu hầm bí mật dưới đền thờ và đối diện Lussyh.",
+        background: "assets/background/matthat.jpg",
+        character: ""
+    },
+    {
+        speaker: "Lussahna",
+        text: "“Mẹ… Tại sao?”",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    
+    // Kích hoạt lượt suy luận đoán Boss phụ Chương 5
+    {
+        triggerDuanBoss5: true
+    }
