@@ -1,18 +1,18 @@
 const story = [
-    // --- ĐOẠN 1: TOÀN CẢNH HOÀNG HÔN KINH THÀNH VÀ SỰ DÈ CHỪNG ---
+    // ==========================================
+    //                 CHƯƠNG 1
+    // ==========================================
     {
         speaker: "",
         text: "Chương 1: Lữ khách đến từ phương xa\n\nMặt trời phương Tây đang dần chìm xuống phía sau những đụn cát vàng bất tận. Ánh chiều tà nhuộm cả chân trời thành một màu hổ phách rực rỡ, trải dài trên những mái vòm bằng đá trắng của kinh thành Ai Cập cổ đại. Từ xa nhìn lại, vương quốc tựa như một viên ngọc vàng được các vị thần cẩn thận đặt giữa biển cát vô tận, vừa hùng vĩ vừa cổ kính, mang trong mình vẻ đẹp khiến bất cứ lữ khách nào cũng phải ngẩn ngơ khi lần đầu đặt chân đến. Con đường dẫn vào kinh thành đông đúc hơn thường lệ. Những người buôn bán đang tranh thủ dọn hàng trước khi trời tối. Tiếng trẻ nhỏ nô đùa hòa lẫn với tiếng lạc đà kéo hàng và những lời chào hỏi quen thuộc vang lên khắp nơi. Thế nhưng khi đoàn thương buôn từ phương Tây xuất hiện ở cuối con đường lớn, bầu không khí nhộn nhịp ấy dường như lặng đi trong thoáng chốc. Người dân hai bên đường không hề tỏ ra thù địch, họ chỉ lặng lẽ quan sát, những ánh mắt hiếu kỳ xen lẫn dè chừng âm thầm hướng về phía đoàn người ngoại quốc đang tiến vào thành. Vài đứa trẻ định chạy lại gần xem những cỗ xe chở đầy hàng hóa kỳ lạ, nhưng rất nhanh đã bị cha mẹ kéo về phía sau. Một vài người phụ nữ khẽ ghé sát tai nhau thì thầm điều gì đó rồi nhanh chóng quay đi. Đối với vùng đất được dòng sông Nile nuôi dưỡng qua hàng ngàn năm lịch sử này, người ngoại lai luôn là một sự tồn tại đặc biệt, họ mang theo những câu chuyện từ những vùng đất chưa từng được biết đến, mang theo những nền văn minh xa lạ, mang theo cả những điều khiến con người vừa tò mò vừa bất an.",
-        background: "assets/background/toanvuongquoc.jpg", // Hiện nền mở đầu
-        character: "" // Lớp dẫn truyện, chưa hiện nhân vật
+        background: "assets/background/toanvuongquoc.jpg",
+        character: ""
     },
-
-    // --- ĐOẠN 2: GIỚI THIỆU GIA ĐÌNH CÔNG TƯỚC VÀ NỘI TÂM LEARIAN ---
     {
         speaker: "",
         text: "Giữa đoàn thương buôn ấy, một thiếu niên đang chậm rãi cưỡi ngựa đi bên cạnh cỗ xe lớn nhất...",
         background: "", 
-        character: "assets/characters/learian.jpg" // Hiện Learian trước
+        character: "assets/characters/learian.jpg"
     },
     {
         speaker: "",
@@ -24,44 +24,43 @@ const story = [
         speaker: "",
         text: "Đứng bên cạnh ông là phu nhân Lianetta. Khác với vẻ cứng cỏi của chồng, người phụ nữ ấy mang đến cảm giác dịu dàng như làn gió mùa xuân...",
         background: "",
-        character: "assets/characters/melearian.jpg" // Chuyển sang hiện ảnh mẹ
+        character: "assets/characters/melearian.jpg"
     },
     {
         speaker: "",
         text: "Nam tước Dos thì khác, chàng trai trẻ tuổi nhất trong số những người quản lý đoàn buôn sở hữu thân hình cao gầy...",
         background: "",
-        character: "" // Nam tước Dos chưa có hình nên tạm ẩn
+        character: ""
     },
     {
         speaker: "",
-        text: "Nhưng người thu hút nhiều ánh nhìn nhất lại là Learian, chàng đứng phía sau đoàn người, một tay đặt lên hành lý, đôi mắt màu xanh sâu thẳm lặng lẽ nhìn ngắm thành phố trước mặt...",
+        text: "But người thu hút nhiều ánh nhìn nhất lại là Learian, chàng đứng phía sau đoàn người, một tay đặt lên hành lý, đôi mắt màu xanh sâu thẳm lặng lẽ nhìn ngắm thành phố trước mặt...",
         background: "",
-        character: "assets/characters/learian.jpg" // Hiện lại Learian để vào mạch nội tâm
+        character: "assets/characters/learian.jpg"
     },
-    // --- ĐOẠN 3: RA BẾN SÔNG VÀ ĐỐI THOẠI VỚI MẸ ---
     {
         speaker: "",
         text: "Khi đoàn thương buôn ổn định tại cảng, Learian tách ra khỏi đám người, đi dọc theo bến sông Nile, nơi ánh nắng cuối ngày đang nhuộm mặt nước thành một dải vàng óng ánh. Tiếng người dần xa, chỉ còn gió và dòng nước chảy lặng lẽ. Ở phía sau, một giọng nói dịu dàng vang lên, người phụ nữ ấy không hề tỏ ra lo lắng hay nghi ngờ, chỉ nhẹ nhàng đặt tay lên vai chàng.",
         background: "",
-        character: "" // Tạm ẩn nhân vật để người chơi đọc diễn biến
+        character: ""
     },
     {
         speaker: "Lianetta",
         text: "“Người dân nơi đây chỉ chưa quen với chúng ta mà thôi.”",
         background: "",
-        character: "assets/characters/melearian.jpg" // Mẹ hiện lên nói
+        character: "assets/characters/melearian.jpg"
     },
     {
         speaker: "Learian",
         text: "“Nếu là mẹ, chắc chỉ cần một ngày là đã làm quen được với cả thành phố rồi.”",
         background: "",
-        character: "assets/characters/learian.jpg" // Đổi sang Learian đáp
+        character: "assets/characters/learian.jpg"
     },
     {
         speaker: "Lianetta",
         text: "“Không phải một ngày. Ta nghĩ nửa ngày là đủ.”",
         background: "",
-        character: "assets/characters/melearian.jpg" // Đổi lại mẹ mỉm cười
+        character: "assets/characters/melearian.jpg"
     },
     {
         speaker: "",
@@ -87,8 +86,6 @@ const story = [
         background: "",
         character: "assets/characters/melearian.jpg"
     },
-
-    // --- ĐOẠN 4: ĐI VÀO KHU CHỢ VÀ GẶP SALYNYA ---
     {
         speaker: "",
         text: "Learian không trả lời ngay. Chỉ khẽ gật đầu. Sau đó chàng chào mẹ và mọi người để tiến về trung tâm vương đô mà thăm thú nơi đây. Trên đường đi cậu gặp rất nhiều điều thú vị, cảnh sắc, không khí và con người nơi đây đều thật xa lạ với cậu khi lần đầu đặt chân đến đây, đều là những điều cậu chưa từng thấy bao giờ. Nơi đây còn đẹp hơn so với trên sách miêu tả.\n\n“Này, nhìn đôi mắt của cậu ta kìa.” “Thật giống màu biển…” “Người phương Tây đều như vậy sao?” Những lời thì thầm không dứt. Learian đã quen, nhưng quen không làm nó nhẹ đi. Chỉ là chàng học cách im lặng. Cho đến khi chàng rời khỏi đoàn người, đi một mình giữa khu chợ, để mặc tiếng ồn phía sau dần tan vào gió.",
@@ -99,7 +96,7 @@ const story = [
         speaker: "???",
         text: "“Viên đá trên dây chuyền của ngươi thật đẹp.”",
         background: "",
-        character: "assets/characters/salynya.jpg" // Salynya xuất hiện bất ngờ
+        character: "assets/characters/salynya.jpg"
     },
     {
         speaker: "",
@@ -179,19 +176,17 @@ const story = [
         background: "",
         character: "assets/characters/salynya.jpg"
     },
-
-    // --- ĐOẠN 5: BƯỚC NGOẶT ĐỘT NGỘT - SỰ XUẤT HIỆN CỦA VŨ BẠCH ---
     {
         speaker: "",
         text: "Learian khựng lại. Không phải vì câu hỏi. Mà vì ánh nhìn ấy. Lần đầu tiên có người nhìn chàng không phải như kẻ ngoại lai. Không phải như thương nhân. Không phải như công cụ. Mà như một cánh cửa dẫn đến điều chưa biết. Và trong khoảnh khắc ấy, một phần linh hồn sâu trong chàng khẽ lay động.\n\nVũ Bạch. Hắn đứng giữa biển người nhưng mọi âm thanh đều biến mất. Hắn chỉ nhìn nàng. Như đã nhìn qua vô số thế giới. Như đã tìm kiếm nàng qua vô số kiếp sống. Như đã đánh mất nàng một lần nữa. Nàng đang ở đây. Nhưng không nhớ gì cả. Hắn muốn bước tới. Nhưng không thể. Hắn chỉ có thể mượn thân xác Learian, tiến lên một bước. Rồi ôm nàng. Ngắn ngủi. Như một lời chào của người xa lạ.",
         background: "",
-        character: "" // Tạm ẩn để diễn tả hành động ôm nghẹn ngào
+        character: ""
     },
     {
         speaker: "Salynya",
         text: "“Thương nhân phương Tây đều chào như vậy sao?”",
         background: "",
-        character: "assets/characters/salynya.jpg" // Salynya khẽ chớp mắt ngơ ngác
+        character: "assets/characters/salynya.jpg"
     },
     {
         speaker: "Learian",
@@ -209,13 +204,16 @@ const story = [
         speaker: "",
         text: "Learian quay đi, giấu ánh mắt. Bàn tay run nhẹ. Và giọt nước nơi khóe mắt chàng rơi xuống, lặng lẽ biến mất giữa tiếng gió hoàng hôn. Nhưng nàng không thấy. Và cũng không ai biết rằng khoảnh khắc ấy, có người đã đi qua vô số thế giới chỉ để được gặp lại nàng một lần nữa.",
         background: "",
-        character: "assets/characters/learian.jpg" // Kết thúc chương với hình bóng Learian đượm buồn
-    }
-    // ================= CHƯƠNG 2 =================
+        character: "assets/characters/learian.jpg"
+    },
+
+    // ==========================================
+    //                 CHƯƠNG 2
+    // ==========================================
     {
         speaker: "",
         text: "CHƯƠNG 2: Bóng đêm của đứa con Ai Cập\n\nNhững ngày sau cuộc gặp gỡ đầu tiên, Learian dần trở thành vị khách quen thuộc trong hoàng cung. Ban đầu, sự xuất hiện của hắn chỉ gói gọn trong những cuộc trò chuyện ngắn tại thư viện hoàng gia cùng Công chúa Salynya, nơi ánh sáng xuyên qua những khung cửa đá cao đổ xuống từng trang sách cổ, tạo thành những vệt sáng dài trầm mặc như thời gian bị kéo giãn. Nhưng theo thời gian, những cuộc gặp ấy không còn dừng lại ở vài lời trao đổi đơn thuần nữa. Chúng dần kéo dài thành những buổi đi dạo dưới hàng cột đá trắng của hoàng cung, nơi gió sa mạc thổi qua mang theo hơi nóng khô và mùi cát xa xăm...",
-        background: "assets/background/hoangcung.jpg", // Đổi sang cảnh nền hoàng cung nếu có
+        background: "assets/background/hoangcung.jpg", 
         character: ""
     },
     {
@@ -234,7 +232,7 @@ const story = [
         speaker: "",
         text: "Sự thay đổi ấy không thoát khỏi ánh mắt của Pharaoh Aljudius. Ông là một vị vua mang khí chất của sa mạc và mặt trời, làn da màu đồng sẫm mang dấu vết của quyền lực và thời gian, ánh mắt vàng kim sắc bén như thể có thể xuyên qua mọi lời nói dối. Nhưng phía sau tất cả quyền uy ấy không chỉ là một người trị vì, mà còn là một người cha luôn đặt con gái mình ở vị trí an toàn nhất...",
         background: "",
-        character: "assets/characters/pharaoh.jpg" // Đặt sẵn để sau này hai up ảnh vua
+        character: "assets/characters/pharaoh.jpg" 
     },
     {
         speaker: "",
@@ -244,9 +242,9 @@ const story = [
     },
     {
         speaker: "",
-        text: "Ở phía sau ngai vàng, Tể tướng Kadius luôn đứng trong vị trí quen thuộc của mình. Khuôn mặt ông mang những đường nét khắc nghiệt của thời gian và trách nhiệm, ánh mắt luôn quan sát nhiều hơn là phản ứng... Đối lập hoàn toàn với ông là Tư tế Gonius - người đứng gần nhất với thần điện, luôn xuất hiện đúng lúc, luôn nói đúng điều cần nói. Không ai nghi ngờ ông.",
+        text: "Ở phía sau ngai vàng, Tể tướng Kadius luôn đứng trong vị trí quen violent của mình. Khuôn mặt ông mang những đường nét khắc nghiệt của thời gian và trách nhiệm, ánh mắt luôn quan sát nhiều hơn là phản ứng... Đối lập hoàn toàn với ông là Tư tế Gonius - người đứng gần nhất với thần điện, luôn xuất hiện đúng lúc, luôn nói đúng điều cần nói. Không ai nghi ngờ ông.",
         background: "",
-        character: "assets/characters/tuthe.jpg"
+        character: "assets/characters/tute.jpg"
     },
     {
         speaker: "",
@@ -314,15 +312,16 @@ const story = [
         background: "",
         character: "assets/characters/tute.jpg"
     },
-    
-    // Đánh dấu đây là kết thúc Chương 2 để kích hoạt Mini-game
     {
         triggerDuanBoss: true 
-    }
-// ================= CHƯƠNG 3 =================
+    },
+
+    // ==========================================
+    //                 CHƯƠNG 3
+    // ==========================================
     {
         speaker: "",
-        text: "CHƯƠNG 3: LỜI THÌ THẦM BÊN HỒ SELENA\n\nSau vụ đầu độc bất thành nhằm vào Pharaoh, bầu không khí trong hoàng cung không còn giữ được vẻ yên ổn như trước. Mọi thứ vẫn vận hành theo đúng quỹ đạo của nó... Nhưng phía sau lớp vỏ bình thường ấy, một cảm giác bất an không tên đã bắt đầu len lỏi, như một vết nứt rất nhỏ trong nền đá cổ, chưa vỡ ra nhưng đã đủ để khiến người ta không thể làm ngơ. Những vụ mất tích vẫn chưa dừng lại. Người đầu tiên biến mất là một tỳ nữ trong cung. Người thứ hai là một cô gái làm việc tại khu chợ phía Nam. Người thứ ba là một nữ tu tập sự trong đền thờ. Không ai tìm được tung tích của họ. Không nhân chứng, không thi thể, không dấu vết.",
+        text: "CHƯƠNG 3: LỜI THÌ THẦM BÊN HỒ SELENA\n\nSau vụ đầu độc bất thành nhằm vào Pharaoh, bầu không khí trong hoàng cung không còn giữ được vẻ yên ổn như trước. Mọi thứ vẫn vận hành theo đúng quỹ đạo của nó... Nhưng phía sau lớp vỏ bình thường ấy, một cảm giác bất an không tên đã bắt đầu len lỏi, như một vết nứt rất nhỏ trong nền đá cổ, chưa vỡ ra nhưng đã đủ để khiến người ta không thể làm ngơ. Những vụ mất tích vẫn chưa dừng lại. Người đầu tiên biến mất is một tỳ nữ trong cung. Người thứ hai là một cô gái làm việc tại khu chợ phía Nam. Người thứ ba là một nữ tu tập sự trong đền thờ. Không ai tìm được tung tích của họ. Không nhân chứng, không thi thể, không dấu vết.",
         background: "assets/background/hoangcung.jpg",
         character: ""
     },
@@ -395,7 +394,7 @@ const story = [
     {
         speaker: "",
         text: "Một đêm, Salynya và Learian cải trang rời khỏi hoàng cung, đến hồ Selena. Dưới ánh trăng, mặt hồ hiện ra như một tấm gương khổng lồ trải giữa sa mạc, tĩnh lặng đến mức phi lý. Rất nhiều thiếu nữ đang đứng quanh hồ. Có người thả hoa xuống nước, có người nhắm mắt cầu nguyện, viết điều ước lên dải lụa trắng rồi thả theo gió. Không gian tràn ngập một thứ niềm tin mỏng manh nhưng mạnh mẽ.",
-        background: "assets/background/hoselena.jpg", // Cảnh nền hồ Selena nếu có
+        background: "assets/background/hoselena.jpg", 
         character: ""
     },
     {
@@ -446,12 +445,13 @@ const story = [
         background: "",
         character: "assets/characters/salynya.jpg"
     },
-    
-    // Đánh dấu kích hoạt lượt suy luận đoán Boss phụ Chương 3
     {
         triggerDuanBoss3: true
-    }
-// ================= CHƯƠNG 4 =================
+    },
+
+    // ==========================================
+    //                 CHƯƠNG 4
+    // ==========================================
     {
         speaker: "",
         text: "CHƯƠNG 4: NHỮNG ĐÓA HOA DƯỚI ÁNH TRĂNG\n\nSau cái chết của Katisah và Japhah, cuộc điều tra rơi vào một khoảng lặng kỳ lạ. Không phải sự kết thúc, mà là một dạng ngưng trệ như thể mọi sợi dây vừa bị kéo căng đến cực hạn rồi đột ngột bị thả lỏng... Duy chỉ còn lại sợi dây chuyền mặt trăng nằm trong tay Salynya, lạnh và im lặng, như một dấu vết bị bỏ quên giữa dòng sự kiện đang dần trở nên rối loạn. Không ai xác nhận được nó thuộc về ai. Nhưng điều khiến Salynya không thể buông bỏ không phải là cái chết đã xảy ra, mà là những vụ mất tích vẫn tiếp tục. Không có dấu hiệu dừng lại.",
@@ -467,8 +467,8 @@ const story = [
     {
         speaker: "",
         text: "Tại đền thờ, Lussyh vẫn giữ vai trò nữ tu trưởng với sự chuẩn mực tuyệt đối. Bà xuất hiện đúng lúc, hành lễ đúng quy tắc, và không để lại bất kỳ sơ hở nào. Sự nghiêm túc và tận tụy của bà khiến nhiều người xem bà như một điểm tựa tinh thần trong giai đoạn bất ổn. Ngay cả Salynya cũng dành cho bà sự tôn trọng nhất định. Thế nhưng, có những thứ tồn tại ở những khoảng lặng rất nhỏ, nơi không ai chú ý. Ở nơi đó, ánh nhìn của Lussyh đôi khi dừng lại lâu hơn bình thường mỗi khi nhắc đến những vụ mất tích.",
-        background: "assets/background/dentho.jpg", // Cảnh nền đền thờ nếu có
-        character: "assets/characters/lussyh.jpg" // Ảnh nữ tu trưởng nếu có
+        background: "assets/background/dentho.jpg", 
+        character: "assets/characters/lussyh.jpg" 
     },
     {
         speaker: "",
@@ -479,8 +479,8 @@ const story = [
     {
         speaker: "",
         text: "Một buổi chiều, trong lúc đang đi qua khu chợ phía Đông, Salynya gặp Lussahna. Nàng xuất hiện giữa ánh nắng vàng rơi xuống những gian hàng đá, ôm trong tay một giỏ hoa sen trắng. Nụ cười của nàng vẫn giống như lần đầu tiên gặp gỡ, trong trẻo và không mang theo bất kỳ lớp phòng vệ nào.",
-        background: "assets/background/khucho.jpg", // Cảnh nền khu chợ nếu có
-        character: "assets/characters/lussahna.jpg" // Ảnh nữ tu trẻ nếu có
+        background: "assets/background/khucho.jpg", 
+        character: "assets/characters/lussahna.jpg" 
     },
     {
         speaker: "Lussahna",
@@ -542,12 +542,13 @@ const story = [
         background: "assets/background/hoselena.jpg",
         character: ""
     },
-    
-    // Đánh dấu kích hoạt lượt suy luận đoán Boss phụ Chương 4
     {
         triggerDuanBoss4: true
-    }
-// ================= CHƯƠNG 5 =================
+    },
+
+    // ==========================================
+    //                 CHƯƠNG 5
+    // ==========================================
     {
         speaker: "",
         text: "CHƯƠNG 5: LỜI CHÚC PHÚC CUỐI CÙNG\n\nNhững ngày đầu mùa hạ tràn qua Ai Cập bằng thứ hơi nóng khô rát của sa mạc... Vương quốc lại đang bước vào một trạng thái bất ổn không ai gọi tên được, khi số người mất tích tăng lên theo cách không còn giống một chuỗi sự kiện rời rạc mà giống như từng mắt xích của một cơ chế đang dần khép lại. Hồ Selena vẫn lặng, nhưng chính sự bình lặng đó lại khiến nó trở nên đáng ngờ hơn, như thể mọi thứ bên dưới đang chờ một thời điểm thích hợp để trồi lên cùng lúc.",
@@ -591,12 +592,6 @@ const story = [
         character: "assets/characters/lussahna.jpg"
     },
     {
-        speaker: "",
-        text: "Learian im lặng. Không phải vì bất ngờ, mà vì hắn hiểu rõ ý nghĩa của khoảnh khắc này hơn bất kỳ ai. Sau cùng, hắn chỉ nói một câu rất ngắn.",
-        background: "",
-        character: "assets/characters/learian.jpg"
-    },
-    {
         speaker: "Learian",
         text: "“Xin lỗi. Trong lòng ta đã có người rồi.”",
         background: "",
@@ -624,7 +619,7 @@ const story = [
         speaker: "",
         text: "Trong bóng tối sâu nhất của đền thờ, Lussyh bước xuống một căn phòng bị phong kín. Tư tế Gonius đã ở đó từ trước, như thể đã biết bà sẽ đến.",
         background: "assets/background/matthat.jpg",
-        character: "assets/characters/tute.jpg" // Sửa chuẩn tute theo đúng file của hai
+        character: "assets/characters/tute.jpg" 
     },
     {
         speaker: "Gonius",
@@ -662,12 +657,13 @@ const story = [
         background: "",
         character: "assets/characters/lussahna.jpg"
     },
-    
-    // Kích hoạt lượt suy luận đoán Boss phụ Chương 5
     {
         triggerDuanBoss5: true
-    }
-// ================= CHƯƠNG 6 =================
+    },
+
+    // ==========================================
+    //                 CHƯƠNG 6
+    // ==========================================
     {
         speaker: "",
         text: "CHƯƠNG 6: LỜI NGUYỀN CỦA NHỮNG KẺ NGOẠI LAI\n\nCái chết của Lussahna không khép lại bi kịch, nó chỉ khiến bi kịch chuyển sang một dạng tồn tại khác, lặng hơn, dai hơn. Trong hoàng cung, Salynya không còn xuất hiện với dáng vẻ điềm tĩnh quen thuộc, nàng tự nhốt mình trong thư phòng giữa những bản điều tra chồng chất như một mê cung không lối thoát. Learian ở bên nàng như một điểm tựa im lặng, cùng nàng ghép lại những mảnh vỡ của một sự thật đang dần trở nên quá lớn.",
@@ -683,7 +679,7 @@ const story = [
     {
         speaker: "",
         text: "Salynya không chấp nhận sự hình thành của một “sự thật tiện lợi” như vậy. Ngay trong thiết triều, nàng đứng lên từ chối để công lý bị bóp méo bởi đám đông. Nàng nói không thể lấy nỗi sợ làm nền tảng cho quyết định của vương quốc, nhưng lời nàng không đủ để dập tắt cơn sóng dữ. Trước áp lực từ các đại thần, Pharaoh chọn cách cho một tháng điều tra để trì hoãn sự sụp đổ của niềm tin.",
-        background: "assets/background/daidien.jpg", // Cảnh đại điện thiết triều
+        background: "assets/background/daidien.jpg", 
         character: "assets/characters/salynya.jpg"
     },
     {
@@ -695,7 +691,7 @@ const story = [
     {
         speaker: "",
         text: "Những ngày sau đó, cuộc điều tra đi sâu hơn vào tầng tối của sự thật. Mọi dấu vết tin đồn đều dẫn về cùng một nguồn: một người đàn ông bí ẩn liên tục gieo rắc câu chuyện về lời nguyền ngoại lai rồi biến mất. Khi họ tìm được hắn trong một khu nhà bỏ hoang gần bến cảng, hắn đã chết một cách lặng lẽ đến phi lý.",
-        background: "assets/background/nhahoang.jpg", // Cảnh nhà hoang nếu có
+        background: "assets/background/nhahoang.jpg", 
         character: ""
     },
     {
@@ -704,12 +700,13 @@ const story = [
         background: "assets/background/hoselena.jpg",
         character: "assets/characters/salynya.jpg"
     },
-    
-    // Kích hoạt lượt suy luận đoán Boss phụ Chương 6
     {
         triggerDuanBoss6: true
-    }
-// ================= CHƯƠNG 7 =================
+    },
+
+    // ==========================================
+    //                 CHƯƠNG 7
+    // ==========================================
     {
         speaker: "Hệ thống",
         text: "✨ CHÀO MỪNG BẠN ĐẾN VỚI CHƯƠNG 7: TẾ ĐÀN DƯỚI ÁNH TRĂNG ✨",
@@ -797,7 +794,7 @@ const story = [
     {
         speaker: "",
         text: "Nàng buông mình xuống. Ánh sáng bùng lên thanh tẩy và tái cấu trúc lại thế giới. Salynya tan vào ánh sáng như một 'chìa khóa sống' hoàn thành sứ mệnh duy nhất của đời mình.",
-        background: "assets/background/anhsang.jpg", // Cảnh nền bùng sáng nếu có
+        background: "assets/background/anhsang.jpg", 
         character: ""
     },
     {
@@ -824,3 +821,4 @@ const story = [
         background: "assets/background/sa-mac-khoi-dau.jpg",
         character: ""
     }
+];
