@@ -24,7 +24,7 @@ const story = [
         speaker: "",
         text: "Đứng bên cạnh ông là phu nhân Lianetta. Khác với vẻ cứng cỏi của chồng, người phụ nữ ấy mang đến cảm giác dịu dàng như làn gió mùa xuân...",
         background: "",
-        character: "assets/characters/lianetta.jpg" // Chuyển sang hiện ảnh mẹ
+        character: "assets/characters/melearian.jpg" // Chuyển sang hiện ảnh mẹ
     },
     {
         speaker: "",
@@ -49,7 +49,7 @@ const story = [
         speaker: "Lianetta",
         text: "“Người dân nơi đây chỉ chưa quen với chúng ta mà thôi.”",
         background: "",
-        character: "assets/characters/lianetta.jpg" // Mẹ hiện lên nói
+        character: "assets/characters/melearian.jpg" // Mẹ hiện lên nói
     },
     {
         speaker: "Learian",
@@ -61,7 +61,7 @@ const story = [
         speaker: "Lianetta",
         text: "“Không phải một ngày. Ta nghĩ nửa ngày là đủ.”",
         background: "",
-        character: "assets/characters/lianetta.jpg" // Đổi lại mẹ mỉm cười
+        character: "assets/characters/melearian.jpg" // Đổi lại mẹ mỉm cười
     },
     {
         speaker: "",
@@ -73,7 +73,7 @@ const story = [
         speaker: "Lianetta",
         text: "“Đừng quá bận tâm. Con không sinh ra để thuộc về ánh nhìn của tất cả mọi người. Con chỉ cần đi đúng con đường mình muốn là đủ.”",
         background: "",
-        character: "assets/characters/lianetta.jpg"
+        character: "assets/characters/melearian.jpg"
     },
     {
         speaker: "",
@@ -85,7 +85,7 @@ const story = [
         speaker: "Lianetta",
         text: "“Nhưng nếu con vẫn cảm thấy cô độc… Thì hãy nhớ, thế giới này không chỉ có những người đang nhìn con bằng ánh mắt xa lạ. Vẫn sẽ có người nhìn con bằng ánh mắt như mẹ đang nhìn con lúc này.”",
         background: "",
-        character: "assets/characters/lianetta.jpg"
+        character: "assets/characters/melearian.jpg"
     },
 
     // --- ĐOẠN 4: ĐI VÀO KHU CHỢ VÀ GẶP SALYNYA ---
