@@ -451,3 +451,100 @@ const story = [
     {
         triggerDuanBoss3: true
     }
+// ================= CHƯƠNG 4 =================
+    {
+        speaker: "",
+        text: "CHƯƠNG 4: NHỮNG ĐÓA HOA DƯỚI ÁNH TRĂNG\n\nSau cái chết của Katisah và Japhah, cuộc điều tra rơi vào một khoảng lặng kỳ lạ. Không phải sự kết thúc, mà là một dạng ngưng trệ như thể mọi sợi dây vừa bị kéo căng đến cực hạn rồi đột ngột bị thả lỏng... Duy chỉ còn lại sợi dây chuyền mặt trăng nằm trong tay Salynya, lạnh và im lặng, như một dấu vết bị bỏ quên giữa dòng sự kiện đang dần trở nên rối loạn. Không ai xác nhận được nó thuộc về ai. Nhưng điều khiến Salynya không thể buông bỏ không phải là cái chết đã xảy ra, mà là những vụ mất tích vẫn tiếp tục. Không có dấu hiệu dừng lại.",
+        background: "assets/background/hoangcung.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Những ngày sau đó, Salynya gần như không còn thời gian để nghỉ ngơi. Nàng liên tục có mặt tại thư viện hoàng gia, lật lại từng bản ghi chép. Learian vẫn đi cùng nàng như một thói quen không ai nhắc đến. Sự hiện diện của hắn chỉ đơn giản là một dạng cân bằng, giúp nàng không bị cuốn quá sâu vào những vòng xoáy thông tin đang ngày càng rối rắm. Dần dần, hình ảnh vị thương nhân ngoại quốc đi bên cạnh công chúa trở thành một phần quen thuộc trong cung điện.",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Tại đền thờ, Lussyh vẫn giữ vai trò nữ tu trưởng với sự chuẩn mực tuyệt đối. Bà xuất hiện đúng lúc, hành lễ đúng quy tắc, và không để lại bất kỳ sơ hở nào. Sự nghiêm túc và tận tụy của bà khiến nhiều người xem bà như một điểm tựa tinh thần trong giai đoạn bất ổn. Ngay cả Salynya cũng dành cho bà sự tôn trọng nhất định. Thế nhưng, có những thứ tồn tại ở những khoảng lặng rất nhỏ, nơi không ai chú ý. Ở nơi đó, ánh nhìn của Lussyh đôi khi dừng lại lâu hơn bình thường mỗi khi nhắc đến những vụ mất tích.",
+        background: "assets/background/dentho.jpg", // Cảnh nền đền thờ nếu có
+        character: "assets/characters/lussyh.jpg" // Ảnh nữ tu trưởng nếu có
+    },
+    {
+        speaker: "",
+        text: "Trong khi đó, Learian bắt đầu nhận ra một điều khác: Tin đồn về hồ Selena đang thay đổi. Người ta bắt đầu nói về hồ Selena như một vùng đất linh thiêng. Họ nói rằng dưới mặt hồ có nữ thần mặt trăng đang ngủ yên, những thiếu nữ biến mất là vì được chọn lựa. Họ nói rằng ai mang hoa sen trắng đến hồ và cầu nguyện sẽ nhận được điều mình mong muốn. Không ai biết những lời đồn ấy bắt đầu từ đâu, và điều đáng sợ nhất là: không ai cố gắng phản bác chúng đủ mạnh để dập tắt.",
+        background: "assets/background/hoselena.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Một buổi chiều, trong lúc đang đi qua khu chợ phía Đông, Salynya gặp Lussahna. Nàng xuất hiện giữa ánh nắng vàng rơi xuống những gian hàng đá, ôm trong tay một giỏ hoa sen trắng. Nụ cười của nàng vẫn giống như lần đầu tiên gặp gỡ, trong trẻo và không mang theo bất kỳ lớp phòng vệ nào.",
+        background: "assets/background/khucho.jpg", // Cảnh nền khu chợ nếu có
+        character: "assets/characters/lussahna.jpg" // Ảnh nữ tu trẻ nếu có
+    },
+    {
+        speaker: "Lussahna",
+        text: "“Điện hạ.”",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "Salynya",
+        text: "“Lussahna.”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "",
+        text: "Learian đứng phía sau, ánh mắt dừng lại trên cô gái trẻ một nhịp rất ngắn. Có một cảm giác rất khó gọi tên. Không phải nghi ngờ, chỉ là một sự đối lập quá rõ ràng giữa ánh sáng và những gì đang dần diễn ra trong bóng tối.",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "Lussahna",
+        text: "“Thần sẽ cầu nguyện cho điện hạ mỗi ngày. Hy vọng nữ thần mặt trăng sẽ bảo hộ người.”",
+        background: "",
+        character: "assets/characters/lussahna.jpg"
+    },
+    {
+        speaker: "",
+        text: "Từ hôm đó, Lussahna bắt đầu xuất hiện nhiều hơn bên cạnh Salynya. Khi thì mang sách đến thư viện, khi thì hỗ trợ ghi chép trong các buổi điều tra. Sự hiện diện của nàng giống như một điểm sáng nhỏ trong bầu không khí nặng nề. Trong một buổi chiều, khi Salynya và Learian đang trao đổi dữ liệu, Lussahna đứng từ xa quan sát một lúc rất lâu, rồi khẽ mỉm cười và quay đi. Ánh chiều rơi xuống bóng lưng ấy kéo dài hơn bình thường một chút.",
+        background: "assets/background/hoangcung.jpg",
+        character: ""
+    },
+    {
+        speaker: "",
+        text: "Tại đền thờ, ánh mắt của Nữ tu trưởng Lussyh đôi khi vẫn dừng lại rất lâu về phía hồ Selena. Những ngày tiếp theo, số người mất tích tiếp tục tăng lên. Tin đồn không còn là lời thì thầm nữa, mà đã trở thành một phần trong đời sống tinh thần của dân chúng. Ranh giới giữa niềm tin và sự thật càng trở nên mờ đi.",
+        background: "assets/background/dentho.jpg",
+        character: "assets/characters/lussyh.jpg"
+    },
+    {
+        speaker: "",
+        text: "Một buổi tối, Salynya đứng một mình bên hồ nước trong hoa viên hoàng cung. Learian đến sau đó không lâu.",
+        background: "assets/background/hoavien.jpg",
+        character: ""
+    },
+    {
+        speaker: "Salynya",
+        text: "“Ta đang nghĩ… nếu tất cả những gì người dân tin là sai… Thì ta nên làm gì để kéo họ trở lại?”",
+        background: "",
+        character: "assets/characters/salynya.jpg"
+    },
+    {
+        speaker: "Learian",
+        text: "“Có những thứ không thể kéo lại bằng lý trí. Chỉ có thể chờ nó tự vỡ ra.”",
+        background: "",
+        character: "assets/characters/learian.jpg"
+    },
+    {
+        speaker: "",
+        text: "Salynya không trả lời, chỉ nhìn mặt nước rất lâu. Xa xa, ánh trăng rơi xuống hồ Selena. Và trong khoảnh khắc đó, mặt hồ dường như phản chiếu thứ gì đó không thuộc về thế giới hiện tại. Một nhịp rất nhỏ. Rất sâu. Nhưng đủ để khiến mọi thứ bắt đầu lệch khỏi quỹ đạo ban đầu...",
+        background: "assets/background/hoselena.jpg",
+        character: ""
+    },
+    
+    // Đánh dấu kích hoạt lượt suy luận đoán Boss phụ Chương 4
+    {
+        triggerDuanBoss4: true
+    }
+];
