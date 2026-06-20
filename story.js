@@ -10,11 +10,34 @@ const story = [
     // --- ĐOẠN 2: GIỚI THIỆU GIA ĐÌNH CÔNG TƯỚC VÀ NỘI TÂM LEARIAN ---
     {
         speaker: "",
-        text: "Giữa đoàn thương buôn ấy, một thiếu niên đang chậm rãi cưỡi ngựa đi bên cạnh cỗ xe lớn nhất. Mái tóc nâu hạt dẻ của chàng khẽ lay động trong gió chiều. Đôi mắt xanh sâu thẳm phản chiếu sắc trời nơi chân trời xa xôi, tựa như đại dương rộng lớn mà phần lớn người dân nơi đây chưa từng được nhìn thấy trong đời. Thiếu niên ấy tên là Learian, con trai duy nhất của công tước Rohan. Ở phía trước đoàn người, Công tước Rohan đang cùng các quan chức tại cảng trao đổi những thủ tục cần thiết. Người đàn ông khoảng bốn mươi tuổi sở hữu vóc dáng cao lớn, bờ vai rộng cùng phong thái điềm tĩnh của một quý tộc từng trải. Mái tóc vàng được buộc gọn sau lưng, đôi mắt xanh lục sắc bén nhưng không hề khiến người khác cảm thấy áp lực. Chỉ cần đứng đó, ông đã toát ra khí chất của một người quen với việc dẫn dắt và bảo vệ những người phía sau mình. Đứng bên cạnh ông là phu nhân Lianetta. Khác với vẻ cứng cỏi của chồng, người phụ nữ ấy mang đến cảm giác dịu dàng như làn gió mùa xuân. Mái tóc nâu mềm mại khẽ lay động trong gió, đôi mắt xanh dương ánh lên sự tò mò và thích thú khi quan sát khung cảnh xung quanh. Nam tước Dos thì khác, chàng trai trẻ tuổi nhất trong số những người quản lý đoàn buôn sở hữu thân hình cao gầy cùng gương mặt điềm tĩnh đến mức khó đoán, đôi mắt màu hổ phách sắc sảo không ngừng quan sát mọi thứ xung quanh như một thương nhân lão luyện. Nhưng người thu hút nhiều ánh nhìn nhất lại là Learian, chàng đứng phía sau đoàn người, một tay đặt lên hành lý, đôi mắt màu xanh sâu thẳm lặng lẽ nhìn ngắm thành phố trước mặt. Người dân xung quanh bắt đầu bàn tán. Họ không mang ác ý rõ ràng, nhưng sự dè chừng là điều không thể giấu.\n\nLearian đã quen với những ánh nhìn như thế từ lâu, nhưng quen không đồng nghĩa với việc không cảm thấy gì. Giữa đám đông, cảm giác bị tách biệt vẫn luôn tồn tại như một bức tường vô hình. Nhưng chàng chỉ khẽ cười, nụ cười bình thản quen thuộc dùng để che giấu những cảm xúc không muốn người khác nhìn thấy.",
-        background: "", // Giữ nguyên nền cũ
-        character: "assets/characters/learian.jpg" // Xuất hiện Learian ở đoạn giới thiệu này
+        text: "Giữa đoàn thương buôn ấy, một thiếu niên đang chậm rãi cưỡi ngựa đi bên cạnh cỗ xe lớn nhất...",
+        background: "", 
+        character: "assets/characters/learian.jpg" // Hiện Learian trước
     },
-
+    {
+        speaker: "",
+        text: "Ở phía trước đoàn người, Công tước Rohan đang cùng các quan chức tại cảng trao đổi những thủ tục cần thiết. Người đàn ông khoảng bốn mươi tuổi sở hữu vóc dáng cao lớn, bờ vai rộng cùng phong thái điềm tĩnh của một quý tộc từng trải. Mái tóc vàng được buộc gọn sau lưng, đôi mắt xanh lục sắc bén nhưng không hề khiến người khác cảm thấy áp lực. Chỉ cần đứng đó, ông đã toát ra khí chất của một người quen với việc dẫn dắt và bảo vệ những người phía sau mình.",
+        background: "",
+        character: "assets/characters/bolearian.jpg" 
+    },
+    {
+        speaker: "",
+        text: "Đứng bên cạnh ông là phu nhân Lianetta. Khác với vẻ cứng cỏi của chồng, người phụ nữ ấy mang đến cảm giác dịu dàng như làn gió mùa xuân...",
+        background: "",
+        character: "assets/characters/lianetta.jpg" // Chuyển sang hiện ảnh mẹ
+    },
+    {
+        speaker: "",
+        text: "Nam tước Dos thì khác, chàng trai trẻ tuổi nhất trong số những người quản lý đoàn buôn sở hữu thân hình cao gầy...",
+        background: "",
+        character: "" // Nam tước Dos chưa có hình nên tạm ẩn
+    },
+    {
+        speaker: "",
+        text: "Nhưng người thu hút nhiều ánh nhìn nhất lại là Learian, chàng đứng phía sau đoàn người, một tay đặt lên hành lý, đôi mắt màu xanh sâu thẳm lặng lẽ nhìn ngắm thành phố trước mặt...",
+        background: "",
+        character: "assets/characters/learian.jpg" // Hiện lại Learian để vào mạch nội tâm
+    },
     // --- ĐOẠN 3: RA BẾN SÔNG VÀ ĐỐI THOẠI VỚI MẸ ---
     {
         speaker: "",
